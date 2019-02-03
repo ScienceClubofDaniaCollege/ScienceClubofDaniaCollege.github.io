@@ -10,3 +10,8 @@
     background-color: #FFF;
     background-position: center;
   }
+  img{
+  	margin-left: 50%;
+  	margin-right: 50%;
+  	transform: translateX(-50%);
+  }
