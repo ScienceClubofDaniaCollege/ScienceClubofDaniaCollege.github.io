@@ -6,6 +6,7 @@
     height: 100%;
     z-index: 9999;
     background-image: url('../img/physics-atom.gif');
+    background-size: auto;
     background-repeat: no-repeat; 
     background-color: #FFF;
     background-position: center;
