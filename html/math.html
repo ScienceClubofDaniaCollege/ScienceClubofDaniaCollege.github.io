@@ -7,14 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-     <!-- AOS CSS -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- AOS js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <!-- Own CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- ICON -->
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title>DSC</title>
   </head>
   <body>
@@ -26,15 +24,20 @@
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
-    <strong><h4 class="text-center" data-aos="fade-right">Website is under developement by Nurul Huda and Zahin Afsar</h4>
-      <h3 class="text-center" data-aos="fade-left"><a  href="https://github.com/DaniaScienceClub/Dania_Science_Club-s-Web">Click here for helping us to develope this website.</a></h3>
+    <strong><h4 class="animated fadeInRight text-center">Website is under developement by Nurul Huda and Zahin Afsar</h4>
+      <h3 class="text-center animated fadeInLeft "><a  href="https://github.com/DaniaScienceClub/Dania_Science_Club-s-Web">Click here for helping us to develope this website.</a></h3>
      </strong> 
   </div>
+  
+  <script>
+    $(".alert").alert();
+  </script>
   </div>
   
  
 
-  	<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top">
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -48,30 +51,19 @@
           Subject
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="html/math.html">Math</a>
+          <a class="dropdown-item" href="math.html">Math</a>
           <a class="dropdown-item" href="#">Physics</a>
           <a class="dropdown-item" href="#">Chemistry</a>
           <a class="dropdown-item" href="#">Biology</a>
         </div>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link na" href="#">About</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
   </div>
 </nav><br>
-<<<<<<< HEAD
-        <img class="animated zoomIn image self align" src="img/logo.svg">
-        <img class="animated zoomIn" src="img/math-calc.gif"   width="500" height="500" alt="Math">
-        <img src="img/chemistry-conical-flask2.gif" class="animated zoomIn img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"  width="500" height="500" alt="">
-        <img src="img/biology-dna.gif" class="animated zoomIn img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"  width="500" height="500" alt="">
-=======
-        <img data-aos="zoom-in" class="animated zoomIn image self align" src="img/logo2.png">
-        <img data-aos="flip-left" src="img/logo.svg">
-        <img data-aos="flip-right" class="animated zoomIn" src="img/math-calc.gif"   width="500" height="500" alt="Math">
-        <img data-aos="flip-left" src="img/chemistry-conical-flask2.gif" class="animated zoomIn img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"  width="500" height="500" alt="">
-        <img data-aos="flip-right" src="img/biology-dna.gif" class="animated zoomIn img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"  width="500" height="500" alt="">
->>>>>>> 24c0147ecdb2602b655d020de4fa0cfea7c01c67
+        <img class="animated zoomIn image self align logozhn" src="../img/logo.svg">
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -79,13 +71,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- Main JavaScript -->
     <script src="js/main.js"></script>
-    
-    <!-- AOS js -->
-    <script>
-    AOS.init({
-    duration:1200,
-    });
-    </script>
-    
   </body>
 </html>
