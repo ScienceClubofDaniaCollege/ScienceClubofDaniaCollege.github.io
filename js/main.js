@@ -1,4 +1,4 @@
-// NHA's JavaScript
+// Start of NHA's JavaScript
 // Loader
 const fadeOutEffect = (fadeTime) => {
     let target = document.querySelector('#loader');
@@ -27,4 +27,5 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.top = "-50px";
   }
-}
+};
+// End of NHA's JavaScript

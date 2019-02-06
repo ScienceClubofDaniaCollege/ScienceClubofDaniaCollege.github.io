@@ -2,16 +2,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 50% auto;
-    height: 50% auto;
+    width: 100%;
+    height: 100%;
     z-index: 9999;
     background-image: url('../img/physics-atom.gif');
     background-size: auto;
     background-repeat: no-repeat; 
-    background-color: #3aaace;
+    background-color: #ffffff;
     background-position: center;
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> 24c0147ecdb2602b655d020de4fa0cfea7c01c67
+.box-shadow {
+  box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
+}
