@@ -14,3 +14,12 @@
 .box-shadow {
   box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
 }
+
+#headerbox{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+  border-radius: 0 0 50% 50%;
+}
