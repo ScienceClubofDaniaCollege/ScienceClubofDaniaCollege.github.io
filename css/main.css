@@ -16,13 +16,32 @@
 }
 
 #headerbox{
-  margin: 0;
+  background:linear-gradient(-120deg, #0aa4d7, #ffffff);
+  position: absolute;
+  z-index: -1;
+  top:50px;
+  margin-top:0px;
   padding: 0;
   width: 100%;
   height: 300px;
   background-color: blue;
   border-radius: 0 0 50% 50%;
+  opacity: .8;
 }
-.test {
-  background-color: blue;
+img{
+    width: 199px;
+    height: 151px;
+    display: block;
+    position: relative;
+    left: 40px;
+    top: 0px;
+}
+h1{
+      margin-top: -100px;
+    margin-left: 250px;
+    font-weight: 10px;
+    font-size: 50px;
+  width:60%;
+  text-align: right;
+  font-family: Gentona;
 }
