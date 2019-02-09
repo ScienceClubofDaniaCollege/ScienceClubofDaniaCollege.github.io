@@ -29,19 +29,21 @@
   opacity: .8;
 }
 img{
-    width: 199px;
-    height: 151px;
+    height: 200px;
     display: block;
     position: relative;
-    left: 40px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 h1{
-      margin-top: -100px;
-    margin-left: 250px;
-    font-weight: 10px;
-    font-size: 50px;
   width:60%;
-  text-align: right;
-  font-family: Gentona;
+  font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 767px) {
+#headerbox{
+  height: 400px;
+}
+
 }
