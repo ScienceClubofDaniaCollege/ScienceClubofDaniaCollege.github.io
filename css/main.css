@@ -8,7 +8,7 @@
     height: 100%;
     z-index: 9999;
     background-image: url('../img/physics-atom.gif');
-    background-size: auto;
+    background-size: 30%;
     background-repeat: no-repeat; 
     background-color: #ffffff;
     background-position: center;
@@ -17,6 +17,10 @@
 .box-shadow {
   box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
 }
+/*welcome text*/
+.wlcmText{
+  padding: 10px;
+}
 /* End of NHA's CSS */
 
 /* ----------------------------------------------------------- */
@@ -24,7 +28,7 @@
 /* Start of Zahin's CSS */
 #headerbox{
   background:linear-gradient(-120deg, #0aa4d7, #ffffff);
-  position: absolute;
+  position: inherit;
   z-index: -1;
   top:50px;
   margin-top:0px;
