@@ -1,19 +1,17 @@
 // Start of NHA's JavaScript
 // Loader Old JS
-var fadeOutEffect = function fadeOutEffect(fadeTime) {
+function fadeOutEffect(fadeTime) {
   var target = document.querySelector('#loader');
 
-  var loaded = function loaded() {
-    target.style.display = "none";
-  };
+  function loaded() {target.style.display = "none";};
 
-  var fadeEffect = setInterval(function () {
-    if (!target.style.opacity) {
-      target.style.opacity = 1;
-    }
+  var fadeEffect = setInterval(
+
+  function () {
+    if (!target.style.opacity) {target.style.opacity = 1;}
 
     if (target.style.opacity > 0) {
-      target.style.opacity -= 0.1;
+      target.style.opacity -= 0.2;
     } else {
       clearInterval(fadeEffect);
       loaded();

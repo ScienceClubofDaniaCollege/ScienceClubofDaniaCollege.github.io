@@ -1,3 +1,5 @@
+/* Start of NHA's CSS */
+/* loader */
 #loader {
     position: fixed;
     top: 0;
@@ -11,10 +13,15 @@
     background-color: #ffffff;
     background-position: center;
   }
+  /* Shadow effect */
 .box-shadow {
   box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
 }
+/* End of NHA's CSS */
 
+/* ----------------------------------------------------------- */
+
+/* Start of Zahin's CSS */
 #headerbox{
   background:linear-gradient(-120deg, #0aa4d7, #ffffff);
   position: absolute;
@@ -28,6 +35,9 @@
   border-radius: 0 0 50% 50%;
   opacity: .8;
 }
+/* .textWithLogo {
+  width: 60%;
+} */
 img{
     height: 200px;
     display: block;
@@ -35,10 +45,9 @@ img{
     left: 0;
     top: 0;
 }
-h1{
-  width:60%;
-  font-family: sans-serif;
-}
+/* End of Zahin's CSS */
+
+
 
 
 @media screen and (max-width: 767px) {
