@@ -49,14 +49,44 @@ img{
     left: 0;
     top: 0;
 }
-/* End of Zahin's CSS */
-
-
-
-
+.mathh1{
+    padding: 10px;
+}
+.mathgallary{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #2b2727;
+}
+.leftbtn{
+  margin: 50px;
+  float: left;
+}
+.rightbtn{
+  margin: 50px;
+  float: right;
+}
+.photos{
+ margin-left: 50px;
+}
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10{
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: left;
+  width: 90px;
+  height: 90px;
+  background-color: gray;
+}
 @media screen and (max-width: 767px) {
 #headerbox{
   height: 400px;
 }
 
+
+
+
+
 }
+/* End of Zahin's CSS */
