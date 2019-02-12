@@ -1,5 +1,5 @@
-// Start of NHA's JavaScript
-// Loader Old JS
+// // Start of NHA's JavaScript
+// // Loader Old JS
 // function fadeOutEffect(fadeTime) {
 //   var target = document.querySelector('#loader');
 
@@ -20,7 +20,7 @@
 // };
 
 // document.querySelector('body').onload = fadeOutEffect(50);
-// Loader New JS
+// // Loader New JS
 // const fadeOutEffect = (fadeTime) => {
 //     let target = document.querySelector('#loader');
 //     let loaded = () => {target.style.display = "none"};
@@ -38,4 +38,24 @@
 //     }, fadeTime);
 // };
 // document.querySelector('body').onload = fadeOutEffect(50);
-// End of NHA's JavaScript
+// // End of NHA's JavaScript
+
+// start of zahins javascript
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function prewiew(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("photo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+};
+// end of zahins javascript

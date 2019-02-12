@@ -83,19 +83,17 @@
 <div class="text-center">
      <h1 class="mathh1">Mathematicians and their inventions</h1>
      
-     <div class="mathgallary">
-       <button type="button" class="btn btn-primary leftbtn"><</button>
-       <div class="photos">
-           <div class="photo1"></div>
-           <div class="photo2"></div>
-           <div class="photo3"></div>
-           <div class="photo4"></div>
-           <div class="photo5"></div>
-           <div class="photo6"></div>
-           <div class="photo7"></div>
-           <div class="photo8"></div>
-           </div>
-       <button type="button" class="btn btn-primary rightbtn">></button>
+     <div class="mathgallary" data-aos="zoom-out">
+       <button type="button" class="btn btn-primary leftbtn" onclick="prewiew(-1)"><</button>
+       <div id="gellary">
+
+           <div class="photo" data-aos="flip-left"><h1><img src="../img/img1.jpg"></h1></div>
+           <div class="photo" data-aos="flip-right"><img src="../img/img2.jpg"><h1></h1></div>
+           <div class="photo" data-aos="flip-left"><img src="../img/img3.jpg"><h1></h1></div>
+           <div class="photo" data-aos="flip-right"><img src="../img/img4.jpg"><h1></h1></div>
+           <div class="photo" data-aos="flip-left"><img src="../img/img5.jpg"><h1></h1></div>
+                 </div>
+       <button type="button" class="btn btn-primary rightbtn" onclick="prewiew(1)">></button>
      </div>
      
 </div>

@@ -56,28 +56,34 @@ img{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 150px;
+  height: 300px;
   background-color: #2b2727;
 }
 .leftbtn{
-  margin: 50px;
+  margin-left: 50px;
+  margin-top: 130px;
+  margin-bottom: 30px;
   float: left;
 }
 .rightbtn{
-  margin: 50px;
+  margin-right: 50px;
+  margin-top: 130px;
+  margin-bottom: 30px;
   float: right;
 }
-.photos{
- margin-left: 50px;
+.photo{
+left: -20px;
 }
-.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10{
-  margin-left: 30px;
-  margin-top: 30px;
+#gellary{
+  z-index: -1;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
   margin-bottom: 30px;
-  float: left;
-  width: 90px;
-  height: 90px;
-  background-color: gray;
+  width: 70%;
+  height: 200px;
+  background-color: white;
 }
 @media screen and (max-width: 767px) {
 #headerbox{
