@@ -12,22 +12,14 @@
   
   function showDivs(n) {
     var i;
-
-
     var galleryPhoto = document.getElementsByClassName("photo");
-
-
-    if (n > galleryPhoto.length) {number = 1}
-
-
-    if (n < 1) {number = galleryPhoto.length}
-
-
+    if (n > galleryPhoto.length) {
+      number = 1}
+    if (n < 1) {
+      number = galleryPhoto.length}
     for (i = 0; i < galleryPhoto.length; i++) {
        galleryPhoto[i].style.display = "none";  
     }
-
-
     galleryPhoto[number-1].style.display = "block";  
   };
   // end of zahins javascript
