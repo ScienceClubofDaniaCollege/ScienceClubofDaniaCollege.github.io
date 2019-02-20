@@ -85,10 +85,7 @@
   background-color: #2b2727;
 }*/
 /* Added by Nurul Huda */
-.galleryPhoto{
-  width: 130px;
-  height: 180px;
-}
+
 .leftbtn{
   margin-left: 50px;
   margin-top: 130px;
@@ -101,78 +98,30 @@
   margin-bottom: 30px;
   float: right;
 }
-.photo{
-}
 #gellary{
   z-index: -1;
   position: absolute;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 40px;
-  margin-bottom: 30px;
-  width: 70%;
-   height: 210px; 
-  background-color: white;
+  width: 80%;
+  color: black;
 }
-img.col-4{
-    height: 200px;
-    width: 200px;
-    display: block;
-    left: 0;
-    top: 0;
-}
-.photocontant{
-  position: absolute;
-  top: 0px;
-  margin-left: 60%;
-  transform: translateX(-50%);
-  width: 75%;
-  height: 100%;
-  background-color: #d8dfe499;
-}
+
 @media screen and (max-width: 767px) {
 #headerbox{
   height: 400px;
 }
-
-
+#gellary{
+  width: 100%;
 }
-/*@media screen and (max-width: 600px) {
-  .galleryPhoto{
-    width: 150px;
-    position: center;
-  }
-  #gellary{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 70%;
-  height: 400px;
-  }
-  .photocontant{
-    font-size: 10px;
-    margin-top: 210px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 99%;
-    height: 180px;
-  }
-  .mathgallary {
-    height: 500px;
-  }
-  .gp img{
-    margin-left: 50%;
-    transform: translateX(-50%);
+.leftbtn{
+  margin-top: 70px;
+    margin-left: 30px;
 }
- .leftbtn,.rightbtn{
-  margin-top:60%;
- }
- .leftbtn{
-  margin-left: 10px;
+.rightbtn{
+  margin-top: 70px;
+    margin-right: 30px;
 }
- .rightbtn{
-  margin-right: 10px;
 }
-}*/
 /* End of Zahin's CSS */
