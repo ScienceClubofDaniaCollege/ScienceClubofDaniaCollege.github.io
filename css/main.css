@@ -42,7 +42,18 @@
     font-size: 45px;
   }
 }
+
+#logo {
+  height: 200px;
+}
 /* End of NHA's CSS */
+
+
+
+
+
+
+
 
 /* ----------------------------------------------------------- */
 
@@ -63,16 +74,6 @@
   font-family: cursive;
   text-underline-position: under;
 }
-/* .textWithLogo {
-  width: 60%;
-} */
-img{
-    height: 200px;
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-}
 .mathh1{
     padding: 10px;
 }
@@ -86,7 +87,7 @@ img{
 /* Added by Nurul Huda */
 .galleryPhoto{
   width: 130px;
-  height: auto;
+  height: 180px;
 }
 .leftbtn{
   margin-left: 50px;
