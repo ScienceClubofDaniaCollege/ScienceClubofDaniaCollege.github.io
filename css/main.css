@@ -74,111 +74,57 @@
   font-family: cursive;
   text-underline-position: under;
 }
-.mathh1{
-    padding: 10px;
+.btn{
+  background-color: black;
+  height: 50px;
+  width: 30px;
 }
-/*.mathgallary{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 300px;
-  background-color: #2b2727;
-}*/
-
-.leftbtn{
-  margin: 20px;
-  margin-top: 130px;
-  margin-bottom: 30px;
-  float: left;
-}
-.rightbtn{
-  margin: 20px;  
-  margin-top: 130px;
-  margin-bottom: 30px;
-  float: right;
-}
-#gellary{
-  z-index: -1;
-  position: absolute;
+.gellary{
+  padding: 10px;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 40px;
-  margin-bottom: 30px;
-  width: 70%;
-   height: 210px; 
-  background-color: white;
+  width: 100%;
+  height: 280px;
 }
-img.col-4{
-    height: 200px;
-    width: 200px;
-    display: block;
-    left: 0;
-    top: 0;
+.w-40{
+  margin-left:10%;
+  height: 260px;
 }
-.photocontant{
-  position: absolute;
-  top: 0px;
-  margin-left: 60%;
-  transform: translateX(-50%);
-  width: 75%;
-  height: 100%;
-  background-color: #d8dfe499;
+.contant {
+    display:block; 
+    height:200px; 
+    width: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    text-align: right;
+}
+.h4{
+  display: none;
 }
 @media screen and (max-width: 767px) {
 #headerbox{
   height: 400px;
 }
 
-
 }
-/*@media screen and (max-width: 600px) {
-  .galleryPhoto{
-    width: 150px;
-    position: center;
-  }
-  #gellary{
+
+@media screen and (max-width: 660px) {
+.gellary{
+  height: 300px;
+}
+.h4{
+  display: block;
+  text-align: center;
+}
+.w-40{
+  height: 180px;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 40px;
-  margin-bottom: 30px;
-  width: 70%;
-  height: 400px;
-  }
-  .photocontant{
-    font-size: 10px;
-    margin-top: 210px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 99%;
-    height: 180px;
-  }
-  .mathgallary {
-    height: 500px;
-  }
-  .gp img{
-    margin-left: 50%;
-    transform: translateX(-50%);
+  border:1px solid white;
 }
- .leftbtn,.rightbtn{
-  margin-top:60%;
- }
- .leftbtn{
-  margin-left: 10px;
+.contant {
+    display: none;
 }
- .rightbtn{
-  margin-right: 10px;
-}
-}*/
-/* End of Zahin's CSS */
-/* Added by Nurul Huda */
-.galleryPhoto{
-    width: 100px;
-    height: 150px;
-    margin-top: 15px;
-    border-radius: .25rem;
-    padding: 0px;
-    border: 1px solid rgba(0,0,0,.125);
-}
-.galleryPhoto.col-2 {
-  max-width: 100%;
 }
