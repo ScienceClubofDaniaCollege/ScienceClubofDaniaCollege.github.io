@@ -46,6 +46,9 @@
 #logo {
   height: 200px;
 }
+.carousel-item img {
+  border-radius: 5px;
+}
 /* End of NHA's CSS */
 
 
