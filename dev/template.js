@@ -74,11 +74,10 @@ var slideImages = [
     ];
 var wiki = "https://en.wikipedia.org/wiki/"
 var slideURLs = [
-    `${wiki}link`,
-    `${wiki}link`,
-    `${wiki}link`,
-    `${wiki}link`,
-    
+    wiki+"link",
+    wiki+"link",
+    wiki+"link",
+    wiki+"link",
     ];
 var slideDetails = ["slide_description",
                     "slide_description",
