@@ -56,31 +56,34 @@ function createSlide(){
 };
 
 // input the information of your slider
-var sectionName = "Math";
-var sliderName = "Mathematicians and Their Inventions";
+var sectionName = "subject_name";
+var sliderName = "slider_name";
 var slideNames = [
-                "Srinivasa Ramanujan",
-                "Albert Einstein",
-                "Pythagoras",
-                "Carl Friedrich Gauss"
+                "name1",
+                "name2",
+                "name3",
+                "name4"
             ];
 
 var slideImages = [
-    "../img/math/srinivasa.png",
-    "../img/math/einstein.png",
-    "../img/math/pythagoras.png",
-    "../img/math/gauss.png",
+    "../img/uc.png",
+    "../img/uc.png",
+    "../img/uc.png",
+    "../img/uc.png",
+    
     ];
+var wiki = "https://en.wikipedia.org/wiki/"
 var slideURLs = [
-    "https://en.wikipedia.org/wiki/Srinivasa_Ramanujan",
-    "https://en.wikipedia.org/wiki/Albert_Einstein",
-    "https://en.wikipedia.org/wiki/Pythagoras",
-    "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+    `${wiki}link`,
+    `${wiki}link`,
+    `${wiki}link`,
+    `${wiki}link`,
+    
     ];
-var slideDetails = ["Srinivasa Ramanujan FRS was an Indian mathematician who lived during the British Rule in India. Though he had almost no formal training in pure mathematics, he made substantial contributions to mathematical.",
-                    "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.",
-                    "Pythagoras of Samos was an ancient Ionian Greek philosopher and the eponymous founder of Pythagoreanism. His political and religious teachings were well known in Magna Graecia and influenced the philosophies of Plato.",
-                    "Johann Carl Friedrich Gauss was a German mathematician and physicist who made significant contributions to many fields in mathematics and sciences.",
+var slideDetails = ["slide_description",
+                    "slide_description",
+                    "slide_description",
+                    "slide_description",
     ];
 
 createSlide();
