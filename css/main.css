@@ -74,7 +74,7 @@
   border-radius: 0 0 50% 50%;
   opacity: .8;
 /* Added by Nurul Huda */
-  font-family: cursive;
+  font-family: 'Comic Sans MS','Droid Sans','Times New Roman', cursive;
   text-underline-position: under;
 }
 .btn{
