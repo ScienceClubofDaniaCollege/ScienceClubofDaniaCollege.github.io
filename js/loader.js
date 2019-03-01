@@ -18,7 +18,6 @@ function fadeOutEffect(fadeTime) {
       }
     }, fadeTime);
   };
-  
   document.querySelector('body').onload = fadeOutEffect(50);
 //   // Loader New JS
 //   const fadeOutEffect = (fadeTime) => {
