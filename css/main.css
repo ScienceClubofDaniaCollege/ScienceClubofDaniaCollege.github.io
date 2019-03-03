@@ -106,6 +106,14 @@
 .h4{
   display: none;
 }
+table.table{
+    height: 400px;
+    width: 100%;
+    overflow: auto;
+}
+.des{
+    display: block;
+}
 @media screen and (max-width: 767px) {
 #headerbox{
   height: 400px;
