@@ -1,0 +1,16 @@
+#showDesButton {
+    display: none;
+}
+    
+
+@media screen and (max-width: 450px) {
+  #showDesButton {
+    display: block;
+    }
+    th:nth-of-type(4),td:nth-of-type(4) {
+
+    display: none;
+    
+    }
+    
+  }

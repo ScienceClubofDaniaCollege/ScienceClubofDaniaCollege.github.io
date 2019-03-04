@@ -1,3 +1,4 @@
+// Start of NHA's JavaScript
 var gsliderName = document.getElementById('slider-name');
 var gsectionName = document.getElementById('section-name');
 // selecting slide-1
@@ -84,3 +85,16 @@ var slideDetails = ["Srinivasa Ramanujan FRS was an Indian mathematician who liv
     ];
 
 createSlide();
+
+// function for displaying descriptionv
+var desCollum = document.getElementById("description");
+function showDes (){
+//  desCollum.classList.add = "makevisible";
+alert("It is not yet implemented.")
+};
+// End of NHA's JavaScript
+
+// start of zahins javascript
+
+
+// end of zahins javascript
