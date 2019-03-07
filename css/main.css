@@ -115,7 +115,7 @@ table.table{
     display: block;
 }
 .card{
-  box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
+    box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
 }
 @media screen and (max-width: 767px) {
 #headerbox{
