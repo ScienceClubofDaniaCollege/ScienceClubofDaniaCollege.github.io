@@ -1,5 +1,6 @@
 var gsliderName = document.getElementById('slider-name');
 var gsectionName = document.getElementById('section-name');
+var gslidetemplate = document.getElementById('slidetemplate')
 // selecting slide-1
 var gslide1Name0 = document.getElementById('slide-1-name0');
 var gslide1Name1 = document.getElementById('slide-1-name1');
