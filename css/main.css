@@ -75,6 +75,7 @@
   opacity: .8;
   font-family: 'Comic Sans MS','Droid Sans','Times New Roman', cursive;
   text-underline-position: under;
+  /* white-space: nowrap; */
 }
 .btn{
   background-color: black;
