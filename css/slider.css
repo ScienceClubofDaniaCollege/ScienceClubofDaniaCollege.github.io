@@ -1,0 +1,54 @@
+
+.btn{
+background-color: black;
+height: 50px;
+width: 30px;
+}
+.gellary{
+padding: 10px;
+margin-left: 50%;
+transform: translateX(-50%);
+margin-top: 40px;
+width: 100%;
+height: 285px;
+}
+.w-40{
+margin-left:10%;
+height: 260px;
+}
+.contant {
+    display:block; 
+    height:200px; 
+    width: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    text-align: right;
+}
+.h4{
+display: none;
+}
+.carousel-item img {
+border-radius: 5px;
+
+}
+
+
+@media screen and (max-width: 780px) {
+    .gellary{
+        height: 300px;
+    }
+    .contant{
+        display: none;
+    }
+    .h4{
+        display: block;
+        text-align: center;
+    }
+    .w-40{
+        height: 180px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid white
+    }
+}
