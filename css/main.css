@@ -101,6 +101,41 @@ table.table{
 .card{
     box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
 }
+.formbody{
+        background-color: skyblue;
+}
+form.card{
+    background-color: skyblue;
+    margin-top: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    padding: 35px;
+}
+h{
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+}
+input,select {
+    margin: 10px 0;
+}
+input[type=date] {
+    width: 180px;
+    float: left;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 @media screen and (max-width: 767px) {
 #headerbox{
   height: 400px;
