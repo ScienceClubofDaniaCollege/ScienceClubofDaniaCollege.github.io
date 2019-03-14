@@ -14,7 +14,7 @@
 }
 
 .loader > img {
-  width: 100px;
+  width: 200px;
 }
 
 .loader.hidden {
@@ -109,7 +109,7 @@ form.card{
     margin-top: 100px;
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 500px;
+    width: 90%;
     padding: 35px;
 }
 h{
@@ -122,7 +122,6 @@ input,select {
 }
 input[type=date] {
     width: 180px;
-    float: left;
 }
 
 input[type=submit] {
