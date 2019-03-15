@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="noscroll"  id="html">
 
 <head>
     <!-- Required meta tags -->
@@ -13,17 +13,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../js/loader.js"></script>
+
     <!-- Own CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/form.css">
     <!-- ICON -->
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <title id="title">Dania Science Club</title>
+
 </head>
 
-<body class="formbody">
-    <!-- Preloader -->
-    <!-- I am disbaling the preloader for better support. May we will enbale it later.
-  <div  id="loader"></div> -->
+<body class="math noscroll" id="body">
+		<!-- Preloader -->
+		<div class="loader">
+			<img src="../img/preloader.svg" alt="Loading...">
+		</div>
 
     <!-- Notice -->
     <!-- start of navbar -->
@@ -72,16 +77,16 @@
     <!-- Headerbox -->
 
     <div class="form">
-        <form class="card" action="###" method="post">
+        <form class="card" action="https://dscapi.herokuapp.com/login" method="POST">
             <img src="../img/logo.svg" height="100px;">
             <h>Login</h>
             <hr>
             Email:
             <input name="email" type="text" placeholder="example@gmail.com">
             Password:
-            <input name="password" type="text" placeholder="password"><br>
-            <input type="submit" value="login"><br>
-            <p>Haven't any account?</p><a href="form.html">Register</a>
+            <input name="password" type="text" placeholder="Password"><br>
+            <input type="submit" value="Login"><br>
+            <p>Haven't registered?<a href="form.html"> Register now</a></p>
         </form>
         <hr>
         <!-- Headerbox -->
@@ -94,7 +99,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <!-- Main JavaScript -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
 
         <!-- AOS js -->
         <script>

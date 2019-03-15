@@ -1,5 +1,6 @@
 /* Start of NHA's CSS */
 /* loader */
+.noscroll {margin: 0; height: 100%; overflow: hidden}
 .loader {
   position: fixed;
   z-index: 99999;
@@ -61,6 +62,7 @@
 #logo {
   height: 200px;
 }
+
 /* End of NHA's CSS */
 
 

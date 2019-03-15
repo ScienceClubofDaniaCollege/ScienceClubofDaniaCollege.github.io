@@ -1,4 +1,3 @@
-// Start of NHA's JavaScript
 const navBar = `
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -95,11 +94,3 @@ if (navContainer == null){
     navContainerI.innerHTML = navBarI;
 }
 else {navContainer.innerHTML = navBar;}
-
-
-// End of NHA's JavaScript
-
-// start of zahins javascript
-
-
-// end of zahins javascript

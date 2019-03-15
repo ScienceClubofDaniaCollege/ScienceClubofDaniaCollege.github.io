@@ -13,14 +13,17 @@ h{
 }
 input,select {
     margin: 10px 0;
-    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    border-radius: 3px;
     background-color:white;
 }
-input[type=date] {
-    width: 180px;
+.col-6 input{
+    width: 100%;
 }
-
 input[type=submit] {
+    width: 100px;
+    align-items: center;
     background-color: #4CAF50;
     color: white;
     padding: 10px;
