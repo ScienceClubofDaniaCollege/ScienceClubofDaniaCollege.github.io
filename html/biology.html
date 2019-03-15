@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="noscroll"  id="html">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -18,11 +18,11 @@
 		<script src="../js/loader.js"></script>
 		<title>Dania Science Club</title>
 	</head>
-	<body>
+	<body class="biology noscroll" id="body">
 		<!-- Preloader -->
 		<div class="loader">
-			<img src="../img/physics-atom.gif" alt="Loading..." />
-		</div>                      
+			<img src="../img/preloader.svg" alt="Loading...">
+		</div>
 		<!-- start of navbar -->
 		<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbar" >
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="about-us.html">About</a>
 					</li>
+				<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Member
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="form.html">Register</a>
+            <a class="dropdown-item" href="login.html">Login</a>
+          </div>
+        </li>
 				</ul>
 			</div>
 		</nav>
@@ -63,7 +72,7 @@
 			<br><br>
 			<div class="container">
 				<div class="row align-items-center">
-					<img data-aos="fade-down" id="logo" src="../img/logo.svg" class="col-md-5 aos-init aos-animate">
+					<img data-aos="fade-down" id="logo" src="../img/logo.svg" class="col-md-5 aos-init aos-animate" alt="Logo of Dania Science Club">
 					<div data-aos="fade-left" class="text-center col-md-5">
             <h1><b><u>Dania Science Club</u></b></h1>
             <p>Scicene Club of Dania College</p>
