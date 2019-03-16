@@ -81,15 +81,15 @@
             <h>Registration Form</h>
             <hr>
             First name:
-            <input name="fname" type="text" placeholder="First name"><br><br>
+            <input name="fname" type="text" placeholder="First name" required><br><br>
             Last name:
-            <input name="lname" type="text" placeholder="Last name">
+            <input name="lname" type="text" placeholder="Last name" required >
             Email:
-            <input name="email" type="text" placeholder="example@gmail.com">
+            <input name="email" type="email" placeholder="example@gmail.com" required>
             Password:
-            <input name="password" type="password" placeholder="Password"><br>
+            <input name="password" type="password" placeholder="Password" minlength="6" required><br>
             Batch:
-            <select name="batch">
+            <select name="batch" required>
                 <option>HSC-20</option>
                 <option>HSC-21</option>
                 <option>HSC-19</option>
@@ -104,12 +104,12 @@
                 <option>HSC-10</option>
             </select><br>
             Shift:
-            <select name="shift">
+            <select name="shift" required>
                 <option>Day</option>
                 <option>Morning</option>
             </select><br>
             Section:
-            <select name="section">
+            <select name="section" required>
                 <option>S1</option>
                 <option>S2</option>
                 <option>S3</option>
