@@ -1,9 +1,9 @@
 form.card{
-    background-color: skyblue;
+    background-color:paleturquoise;
     margin-top: 100px;
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+    width: 700px;
     padding: 35px;
 }
 h{
@@ -15,10 +15,9 @@ input,select {
     margin: 10px 0;
     border: 0;
     padding: 10px;
-    border-radius: 3px;
-    background-color:white;
+    border-radius: 5px;
 }
-.col-6 input{
+.col-6 input,.col-4 select{
     width: 100%;
 }
 input[type=submit] {
@@ -34,9 +33,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-@media screen and (max-width: 767px) {
-#headerbox{
-  height: 400px;
+@media screen and (max-width: 700px) {
+    form.card{
+    width: 100%;
+
 }
 
 }

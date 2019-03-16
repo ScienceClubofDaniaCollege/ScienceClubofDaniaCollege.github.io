@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"  class="noscroll"  id="html">
+<html lang="en" class="noscroll" id="html">
 
 <head>
     <!-- Required meta tags -->
@@ -14,7 +14,7 @@
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Own CSS -->
-	<script src="../js/loader.js"></script>
+    <script src="../js/loader.js"></script>
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/form.css">
@@ -25,10 +25,10 @@
 </head>
 
 <body class="formbody noscroll" id="body">
-		<!-- Preloader -->
-		<div class="loader">
-			<img src="../img/preloader.svg" alt="Loading...">
-		</div>
+    <!-- Preloader -->
+    <div class="loader">
+        <img src="../img/preloader.svg" alt="Loading...">
+    </div>
     <!-- Notice -->
     <!-- start of navbar -->
     <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbar">
@@ -80,41 +80,66 @@
             <img src="../img/logo.svg" height="100px;">
             <h>Registration Form</h>
             <hr>
-            First name:
-            <input name="fname" type="text" placeholder="First name" required><br><br>
-            Last name:
-            <input name="lname" type="text" placeholder="Last name" required >
+            <div class="row">
+                <div class="col-6">
+                    First name:
+                    <input name="fname" type="text" placeholder="First name" required>
+                </div>
+                <div class="col-6">
+                    Last name:
+                    <input name="lname" type="text" placeholder="Last name" required>
+                </div>
+            </div>
             Email:
             <input name="email" type="email" placeholder="example@gmail.com" required>
-            Password:
-            <input name="password" type="password" placeholder="Password" minlength="6" required><br>
-            Batch:
-            <select name="batch" required>
-                <option>HSC-20</option>
-                <option>HSC-21</option>
-                <option>HSC-19</option>
-                <option>HSC-18</option>
-                <option>HSC-17</option>
-                <option>HSC-16</option>
-                <option>HSC-15</option>
-                <option>HSC-14</option>
-                <option>HSC-13</option>
-                <option>HSC-12</option>
-                <option>HSC-11</option>
-                <option>HSC-10</option>
-            </select><br>
-            Shift:
-            <select name="shift" required>
-                <option>Day</option>
-                <option>Morning</option>
-            </select><br>
-            Section:
-            <select name="section" required>
-                <option>S1</option>
-                <option>S2</option>
-                <option>S3</option>
-                <option>S4</option>
-            </select><br>
+            <div class="row">
+                <div class="col-6">
+                    Password:
+                    <input name="password" type="password" placeholder="Password" minlength="6" required>
+                </div>
+                <div class="col-6">
+                    Confirm Password:
+                    <input name="password" type="password" placeholder="Password" minlength="6" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    Shift:
+                    <select name="shift" required>
+                        <option>Day</option>
+                        <option>Morning</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    Batch:
+                    <select name="batch" required>
+                        <option>HSC-20</option>
+                        <option>HSC-21</option>
+                        <option>HSC-19</option>
+                        <option>HSC-18</option>
+                        <option>HSC-17</option>
+                        <option>HSC-16</option>
+                        <option>HSC-15</option>
+                        <option>HSC-14</option>
+                        <option>HSC-13</option>
+                        <option>HSC-12</option>
+                        <option>HSC-11</option>
+                        <option>HSC-10</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    Section:
+                    <select name="section" required>
+                        <option>S1</option>
+                        <option>S2</option>
+                        <option>S3</option>
+                        <option>S4</option>
+                    </select>
+                </div>
+            </div>
+            Phone number(optional):
+            <input type="tel" name="telphone" maxlength="12"/>
+            <br>
             <input type="submit" value="Submit"><br>
             <p>Already registered?<a href="login.html"> Login</a></p>
         </form>
