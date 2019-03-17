@@ -17,7 +17,7 @@ input,select {
     padding: 10px;
     border-radius: 5px;
 }
-.col-6 input,.col-4 select{
+.col-6 input,.col-4 select,.col-10 input,.col-2 input{
     width: 100%;
 }
 input[type=submit] {
@@ -33,6 +33,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+input[type=button]:hover {
+    background-color:#45a049;
+}
+
 @media screen and (max-width: 700px) {
     form.card{
     width: 100%;

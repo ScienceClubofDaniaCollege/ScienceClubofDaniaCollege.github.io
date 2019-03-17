@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Own CSS -->
     <script src="../js/loader.js"></script>
+    <script src="../js/form.js"></script>
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/form.css">
@@ -95,11 +96,11 @@
             <div class="row">
                 <div class="col-6">
                     Password:
-                    <input name="password" type="password" placeholder="Password" minlength="6" required>
+                    <input id="password" name="password" type="password" placeholder="Password" minlength="6"  required>
                 </div>
                 <div class="col-6">
                     Confirm Password:
-                    <input name="password" type="password" placeholder="Password" minlength="6" required>
+                    <input id="cpassword" name="cpassword" type="password" placeholder="Password" minlength="6" onkeyup='check();' required>
                 </div>
             </div>
             <div class="row">
@@ -137,10 +138,10 @@
                     </select>
                 </div>
             </div>
-            Phone number(optional):
-            <input type="tel" name="telphone" maxlength="12"/>
+            Phone number:
+            <input type="tel" name="phone" maxlength="12" required>
             <br>
-            <input type="submit" value="Submit"><br>
+            <input id="submitButton" type="submit" value="Submit"><br>
             <p>Already registered?<a href="login.html"> Login</a></p>
         </form>
         <hr>

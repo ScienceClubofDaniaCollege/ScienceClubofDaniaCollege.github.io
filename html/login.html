@@ -84,7 +84,14 @@
             Email:
             <input name="email" type="email" placeholder="example@gmail.com" required>
             Password:
-            <input name="password" type="password" placeholder="Password" minlength="6" required><br>
+            <div class="row">
+            <div class="col-10">
+            <input id="password" name="password" type="password" placeholder="Password" minlength="6" required>
+            </div>
+            <div class="col-2">
+            <input id="eye" type="button" value="👁️" onclick="showpass()">
+            </div>
+            </div>
             <input type="submit" value="Login"><br>
             <p>Haven't registered?<a href="form.html"> Register now</a></p>
         </form>
@@ -100,6 +107,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <!-- Main JavaScript -->
         <script src="../js/main.js"></script>
+        <script src="../js/form.js"></script>
 
         <!-- AOS js -->
         <script>
