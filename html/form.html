@@ -24,8 +24,7 @@
     <title id="title">Dania Science Club</title>
 
 </head>
-
-<body class="formbody noscroll" id="body">
+<body class="noscroll" id="body">
     <!-- Preloader -->
     <div class="loader">
         <img src="../img/preloader.svg" alt="Loading...">
@@ -82,11 +81,11 @@
             <h>Registration Form</h>
             <hr>
             <div class="row">
-                <div class="col-6">
+                <div class="col-xs-12 col-md-6">
                     First name:
                     <input name="fname" type="text" placeholder="First name" required>
                 </div>
-                <div class="col-6">
+                <div class="col-xs-12 col-md-6">
                     Last name:
                     <input name="lname" type="text" placeholder="Last name" required>
                 </div>
@@ -94,24 +93,26 @@
             Email:
             <input name="email" type="email" placeholder="example@gmail.com" required>
             <div class="row">
-                <div class="col-6">
+                <div class="col-xs-12 col-md-6">
                     Password:
                     <input id="password" name="password" type="password" placeholder="Password" minlength="6"  required>
                 </div>
-                <div class="col-6">
+                <div class="col-xs-12 col-md-6">
                     Confirm Password:
                     <input id="cpassword" name="cpassword" type="password" placeholder="Password" minlength="6" onkeyup='check();' required>
                 </div>
             </div>
+            Roll number:
+            <input type="number" name="pnumber" maxlength="6" required>
             <div class="row">
-                <div class="col-4">
+                <div class="col-xs-12 col-md-4">
                     Shift:
                     <select name="shift" required>
                         <option>Day</option>
                         <option>Morning</option>
                     </select>
                 </div>
-                <div class="col-4">
+                <div class="col-xs-12 col-md-4">
                     Batch:
                     <select name="batch" required>
                         <option>HSC-20</option>
@@ -128,7 +129,7 @@
                         <option>HSC-10</option>
                     </select>
                 </div>
-                <div class="col-4">
+                <div class="col-xs-12 col-md-4">
                     Section:
                     <select name="section" required>
                         <option>S1</option>
@@ -138,8 +139,12 @@
                     </select>
                 </div>
             </div>
+            Choose your photo:
+            <input type="file" name="dp" required>            
             Phone number:
             <input type="tel" name="phone" maxlength="12" required>
+            Write something about yourself:
+            <textarea  name="massage" maxlength="300" required></textarea>
             <br>
             <input id="submitButton" type="submit" value="Submit"><br>
             <p>Already registered?<a href="login.html"> Login</a></p>

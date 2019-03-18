@@ -11,14 +11,21 @@ var check = function () {
 }
 
 function showpass() {
+    var a = document.getElementById("eye");
+    var b = document.getElementById("eyex");
     var x = document.getElementById("password");
     var y = document.getElementById("eye");
     if (x.type === "password") {
         x.type = "text";
         y.value = "---";
         y.color = "blue";
+        a.style.display = "none";
+        b.style.display = "block";
+
     } else {
         x.type = "password";
         y.value = "👁️";
+        a.style.display = "block";
+        b.style.display = "none";
     }
 }

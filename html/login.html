@@ -18,6 +18,8 @@
     <!-- Own CSS -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/form.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- ICON -->
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <title id="title">Dania Science Club</title>
@@ -85,11 +87,12 @@
             <input name="email" type="email" placeholder="example@gmail.com" required>
             Password:
             <div class="row">
-            <div class="col-10">
+            <div class="col-11">
             <input id="password" name="password" type="password" placeholder="Password" minlength="6" required>
             </div>
-            <div class="col-2">
-            <input id="eye" type="button" value="👁️" onclick="showpass()">
+            <div class="col-1">
+            <i id="eye" class="fas fa-eye" onclick="showpass()"></i>
+            <i id="eyex" class="fas fa-eye-slash" onclick="showpass()"></i>
             </div>
             </div>
             <input type="submit" value="Login"><br>

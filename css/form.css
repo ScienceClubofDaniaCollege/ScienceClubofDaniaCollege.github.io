@@ -1,10 +1,28 @@
+body{
+    background-image: url('../img/formbg.png');
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 form.card{
-    background-color:paleturquoise;
     margin-top: 100px;
     margin-left: 50%;
     transform: translateX(-50%);
     width: 700px;
     padding: 35px;
+}
+#eye,#eyex{
+    margin-left:-15px;
+    font-size:24px;
+    margin-top: 20px;
+}
+#eye{
+    display: block;
+}
+#eyex{
+    display: none;
 }
 h{
     text-align: center;
@@ -12,12 +30,13 @@ h{
     font-family: monospace;
 }
 input,select {
+    background-color: #0203040f;
     margin: 10px 0;
     border: 0;
     padding: 10px;
     border-radius: 5px;
 }
-.col-6 input,.col-4 select,.col-10 input,.col-2 input{
+input,select{
     width: 100%;
 }
 input[type=submit] {
@@ -36,7 +55,9 @@ input[type=submit]:hover {
 input[type=button]:hover {
     background-color:#45a049;
 }
-
+textarea{
+    height: 100px;
+}
 @media screen and (max-width: 700px) {
     form.card{
     width: 100%;
