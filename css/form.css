@@ -14,10 +14,10 @@ form.card{
     margin-top: 20px;
 }
 #eye{
-    display: block;
+    display: none;
 }
 #eyex{
-    display: none;
+    display: block;
 }
 h{
     text-align: center;

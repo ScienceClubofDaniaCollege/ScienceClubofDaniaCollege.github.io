@@ -103,7 +103,7 @@
                 </div>
             </div>
             Roll number:
-            <input type="number" name="pnumber" maxlength="6" required>
+            <input type="number" name="roll" maxlength="6" required>
             <div class="row">
                 <div class="col-xs-12 col-md-4">
                     Shift:
@@ -140,9 +140,9 @@
                 </div>
             </div>
             Choose your photo:
-            <input type="file" name="dp" required>            
+            <input type="file" name="photo" required>            
             Phone number:
-            <input type="tel" name="phone" maxlength="12" required>
+            <input type="tel" name="phone" maxlength="11" placeholder="01XXXXXXXXX" pattern="[0-1]{2}[1-9]{1}[0-9]{8}" required>
             Write something about yourself:
             <textarea  name="massage" maxlength="300" required></textarea>
             <br>
