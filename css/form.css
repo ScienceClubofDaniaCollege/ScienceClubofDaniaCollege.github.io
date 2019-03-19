@@ -20,7 +20,8 @@ form.card{
     display: block;
 }
 .eye{
-    margin-left: -60px;
+  margin-left: -60px;
+  z-index: 1;
 }
 h{
     text-align: center;
