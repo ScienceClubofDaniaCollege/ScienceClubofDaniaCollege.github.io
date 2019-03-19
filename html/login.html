@@ -84,15 +84,15 @@
             <h>Login</h>
             <hr>
             Email:
-            <input name="email" type="email" placeholder="example@gmail.com" required>
+            <input name="email" type="email" placeholder="example@gmail.com" required focus>
             Password:
             <div class="row">
-            <div class="col-10">
+            <div class="col-12">
             <input id="password" name="password" type="password" placeholder="Password" minlength="6" required>
             </div>
-            <div class="col-2">
-            <i id="eye" class="fas fa-eye" onclick="showpass()"></i>
-            <i id="eyex" class="fas fa-eye-slash" onclick="showpass()"></i>
+            <div class="eye">
+            <i id="eye" class="fas fa-eye" onclick="toglePassVisibility()"></i>
+            <i id="eyex" class="fas fa-eye-slash" onclick="toglePassVisibility()"></i>
             </div>
             </div>
             <input type="submit" value="Login"><br>

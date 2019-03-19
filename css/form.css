@@ -19,6 +19,9 @@ form.card{
 #eyex{
     display: block;
 }
+.eye{
+    margin-left: -60px;
+}
 h{
     text-align: center;
     font-size: 30px;
@@ -46,6 +49,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #45a049;
+}
+input[type=submit]:disabled {
+    background-color: #494d4967;
+    cursor: no-drop;
 }
 input[type=button]:hover {
     background-color:#45a049;

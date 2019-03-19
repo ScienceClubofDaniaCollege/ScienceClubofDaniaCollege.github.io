@@ -15,8 +15,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Own CSS -->
     <script src="../js/loader.js"></script>
-    <script src="../js/form.js"></script>
-
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/form.css">
     <!-- ICON -->
@@ -75,7 +73,7 @@
     <!-- end of navbar -->
     <!-- Headerbox -->
 
-    <div class="form">
+    <div class="form" onclick="generateMemberId()">
         <form class="card" action="https://dscapi.herokuapp.com/register" method="POST">
             <img src="../img/logo.svg" height="100px;">
             <h>Registration Form</h>
@@ -99,22 +97,22 @@
                 </div>
                 <div class="col-xs-12 col-md-6">
                     Confirm Password:
-                    <input id="cpassword" name="cpassword" type="password" placeholder="Password" minlength="6" onkeyup='check();' required>
+                    <input id="cpassword" name="cpassword" type="password" placeholder="Password" minlength="6" onkeyup='validate();' required>
                 </div>
             </div>
             Roll number:
-            <input type="number" name="roll" maxlength="6" required>
+            <input id="roll" type="number" name="roll" maxlength="6" required>
             <div class="row">
                 <div class="col-xs-12 col-md-4">
                     Shift:
-                    <select name="shift" required>
+                    <select id="shift" name="shift" required>
                         <option>Day</option>
                         <option>Morning</option>
                     </select>
                 </div>
                 <div class="col-xs-12 col-md-4">
                     Batch:
-                    <select name="batch" required>
+                    <select id="batch" name="batch" required>
                         <option>HSC-20</option>
                         <option>HSC-21</option>
                         <option>HSC-19</option>
@@ -131,7 +129,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                     Section:
-                    <select name="section" required>
+                    <select id="section" name="section" required>
                         <option>S1</option>
                         <option>S2</option>
                         <option>S3</option>
@@ -142,11 +140,13 @@
             Choose your photo:
             <input type="file" name="photo" required>            
             Phone number:
-            <input type="tel" name="phone" maxlength="11" placeholder="01XXXXXXXXX" pattern="[0-1]{2}[1-9]{1}[0-9]{8}" required>
+            <input type="tel" name="phone" maxlength="11" placeholder="01XXXXXXXXX" pattern="[0]{1}[1]{1}[1|3|5|6|7|8|9]{1}[0-9]{8}" value="01" required>
             Write something about yourself:
-            <textarea  name="massage" maxlength="300" required></textarea>
+            <textarea  name="message" maxlength="300" required></textarea>
             <br>
-            <input id="submitButton" type="submit" value="Submit"><br>
+            Member ID:
+            <input id="memberId" type="text" name="memberId" readonly>
+            <input id="submitButton" type="submit" value="Submit" formtarget="_blank"><br>
             <p>Already registered?<a href="login.html"> Login</a></p>
         </form>
         <hr>
@@ -161,7 +161,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <!-- Main JavaScript -->
         <script src="../js/main.js"></script>
-
+        <script src="../js/form.js"></script>
         <!-- AOS js -->
         <script>
             AOS.init({
