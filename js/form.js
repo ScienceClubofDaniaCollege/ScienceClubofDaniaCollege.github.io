@@ -1,6 +1,6 @@
-var check = function () {
+function check() {
     var y = document.getElementById("cpassword");
-
+    var x = document.getElementById("password");
     if (x.value == y.value) {
         y.style.border = '2px solid green';
 
