@@ -1,10 +1,6 @@
 body{
-    background-image: url('../img/formbg.png');
-    background-repeat: no-repeat;
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #7452ce;
+    font-size: 18px;
 }
 form.card{
     margin-top: 100px;
@@ -14,7 +10,6 @@ form.card{
     padding: 35px;
 }
 #eye,#eyex{
-    margin-left:-15px;
     font-size:24px;
     margin-top: 20px;
 }
@@ -59,9 +54,15 @@ textarea{
     height: 100px;
 }
 @media screen and (max-width: 700px) {
-    form.card{
-    width: 100%;
-
+    body{
+    background-color:ghostwhite;
 }
-
+    form.card{
+    border: none;
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+    box-shadow: none;
+    background-color: transparent;
+}
 }

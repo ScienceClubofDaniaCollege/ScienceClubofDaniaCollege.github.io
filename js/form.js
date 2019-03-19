@@ -2,10 +2,10 @@ function check() {
     var y = document.getElementById("cpassword");
     var x = document.getElementById("password");
     if (x.value == y.value) {
-        y.style.border = '2px solid green';
+        y.style.border = '3px solid #42dd42';
 
     } else {
-        y.style.border = '2px solid red';
+        y.style.border = '3px solid red';
     }
 
 }
