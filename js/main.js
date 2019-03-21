@@ -27,7 +27,10 @@ const navBar = `
             <a class="nav-link" href="events.html">Events</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="about-us.html">About</a>
+            <a class="nav-link" href="about-us.html">About </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="memberlist.html">Members List</a>
         </li>
     <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -71,6 +74,9 @@ const navBarI = `    <button class="navbar-toggler" type="button" data-toggle="c
   <li class="nav-item">
     <a class="nav-link" href="html/about-us.html">About</a>
   </li>
+  <li class="nav-item">
+            <a class="nav-link" href="html/memberlist.html">Members List</a>
+        </li>
           <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Member
