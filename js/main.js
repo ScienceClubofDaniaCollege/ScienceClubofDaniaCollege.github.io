@@ -109,13 +109,13 @@ else {navContainer.innerHTML = navBar;}
 var x = document.getElementById("sct");
 var y = document.getElementById("hidesct");
 function hidesct(){
-    if(x.style.left=="0px"){
-        x.style.left="-75px";
-        y.style.left="-68px";
+    if(x.style.left=="-75px"){
+        x.style.left="0px";
+        y.style.left="0px";
         y.style.opacity=".5";
     }else{
-         x.style.left="0px";
-         y.style.left="0px";
+         x.style.left="-75px";
+         y.style.left="-65px";
          y.style.opacity="1";
     }
 }
