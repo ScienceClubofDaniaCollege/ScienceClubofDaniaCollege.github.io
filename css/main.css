@@ -188,7 +188,7 @@ td{
 
 }
 #hidesct{
-    left:0px;
+    left:-65px;
     border: 9px solid blue;
     border-radius: 0px 50px 50px 0px;
     top:315px;
@@ -200,7 +200,7 @@ td{
 }
 #sct{
     border: 2px solid blue;
-    left:0px;
+    left:-70px;
     padding:5px;
     border-radius: 0px 10px 10px 0px;
     top:250px;
