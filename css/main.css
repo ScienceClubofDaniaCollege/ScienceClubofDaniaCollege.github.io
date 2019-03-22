@@ -1,66 +1,75 @@
 /* Start of NHA's CSS */
 /* loader */
-.noscroll {margin: 0; height: 100%; overflow: hidden}
+.noscroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 .loader {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader > img {
-  width: 200px;
+    width: 250px;
 }
 
 .loader.hidden {
-  animation: fadeOut 1s;
-  animation-fill-mode: forwards;
+    animation: fadeOut .1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
-@keyframes fadeOut {
-  100% {
-      opacity: 0;
-      visibility: hidden;
-  }
-}
-  /* Shadow effect */
+/* Shadow effect */
 .box-shadow {
-  box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
+    box-shadow: 5px 9px 18px 0px rgba(32, 33, 36, 0.28);
 }
+
 /*welcome text*/
-.wlcmText{
-  padding: 10px;
+.wlcmText {
+    padding: 10px;
 }
 
 @media screen and (max-width: 450px) {
-  h1 {
-    font-size: 40px;
-  }
+    h1 {
+        font-size: 40px;
+    }
 }
+
 @media screen and (max-width: 420px) {
-  h1 {
-    font-size: 32px;
-  }
+    h1 {
+        font-size: 32px;
+    }
 }
+
 @media screen and (max-width: 340px) {
-  h1 {
-    font-size: 28px;
-  }
+    h1 {
+        font-size: 28px;
+    }
 }
+
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 45px;
-  }
+    h1 {
+        font-size: 45px;
+    }
 }
 
 #logo {
-  height: 200px;
+    height: 200px;
 }
 
 /* End of NHA's CSS */
@@ -76,36 +85,116 @@
 
 /* Start of Zahin's CSS */
 #headerbox {
-  /* background: linear-gradient(180deg, #0aa4d7, blue); */
-  position: inherit;
-  z-index: -1;
-  top: 50px;
-  margin-top: 0px;
-  padding: 0;
-  width: 100%;
-  height: 300px;
-  background-color: skyblue;
-  border-radius: 0 0 100px 100px;
-  opacity: .8;
-  font-family: 'Comic Sans MS','Droid Sans','Times New Roman', cursive;
-  text-underline-position: under;
-  white-space: nowrap;
+    position: inherit;
+    z-index: -1;
+    top: 50px;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    font-family: 'Comic Sans MS', 'Droid Sans', 'Times New Roman', cursive;
+    text-underline-position: under;
+    color: black;
+    white-space: nowrap;
 }
-
-table.table{
+img.dania{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: .3;
+    z-index: -90;
+}
+table.table {
     height: 400px;
     width: 100%;
     overflow: auto;
 }
-.des{
+
+.des {
     display: block;
 }
-.card{
-    box-shadow: 5px 9px 18px 0px rgba(32,33,36,0.28);
-}
-@media screen and (max-width: 767px) {
-#headerbox{
-  height: 400px;
+
+.card {
+    box-shadow: 5px 9px 18px 0px rgba(32, 33, 36, 0.28);
 }
 
+.footer,
+.fzhn {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0px;
+}
+
+.fzhn {}
+
+.bg {
+    background-color: blueviolet;
+}
+
+.memrow {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-top: 130px;
+    ;
+    box-shadow: none;
+}
+
+.mzhn {
+    padding: 20px;
+}
+
+.icon {
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: blueviolet;
+}
+
+i {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.iconfloat {
+    width: 140px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent
+}
+@media screen and (max-width: 767px) {
+    #headerbox {
+        height: 400px;
+    }
+    img.dania{
+        height: 400px;
+    }
+}
+#navbari{
+    font-family: monospace;
+}
+a:hover{
+    margin-left: 10px;
+}
+@media screen and (max-width: 777px) {
+
+    .footer,
+    .fzhn {
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .memrow {
+        margin-left: 0px;
+        transform: translateX(0px);
+        width: 100%;
+        margin-top: 0px;
+    }
 }
