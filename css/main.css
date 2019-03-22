@@ -84,6 +84,10 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+a{
+    text-decoration: none;
+    color:black;
+}
 #headerbox {
     position: inherit;
     z-index: -1;
@@ -167,34 +171,58 @@ i {
     transform: translateX(-50%);
     background-color: transparent
 }
-@media screen and (max-width: 767px) {
-    #headerbox {
-        height: 400px;
-    }
-    img.dania{
-        height: 400px;
-    }
-}
 #navbari{
     font-family: monospace;
 }
 a:hover{
-    margin-left: 10px;
+    margin-left: 3px;
+}
+td{
+    padding: 20px;
 }
 @media screen and (max-width: 777px) {
 
-    .footer,
-    .fzhn {
+.footer,.fzhn {
         height: 200px;
     }
 
 }
-
+#hidesct{
+    left:0px;
+    border: 9px solid blue;
+    border-radius: 0px 50px 50px 0px;
+    top:315px;
+    z-index:998;
+    position: fixed;
+    background-color: white;
+    width: 100px;
+    height: 70px;
+}
+#sct{
+    border: 2px solid blue;
+    left:0px;
+    padding:5px;
+    border-radius: 0px 10px 10px 0px;
+    top:250px;
+    z-index: 999;
+    position: fixed;
+    background-color: #0a68e3;
+    width: 70px;
+    height: 200px;
+}
 @media screen and (max-width: 400px) {
     .memrow {
         margin-left: 0px;
         transform: translateX(0px);
         width: 100%;
         margin-top: 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #headerbox {
+        height: 400px;
+    }
+    img.dania{
+        height: 400px;
     }
 }
