@@ -56,7 +56,7 @@ input[type=submit]:disabled {
     cursor: no-drop;
 }
 button {
-    width: 100px;
+    margin: 10px;
     align-items: center;
     background-color: #4CAF50;
     color: white;
