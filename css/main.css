@@ -71,17 +71,6 @@
 #logo {
     height: 200px;
 }
-
-/* iframe */
-.resp-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-
-
-
 /* End of NHA's CSS */
 
 
@@ -129,7 +118,8 @@ img.dania{
     z-index: -90;
 }
 */
-table.table {
+/* These were making the table worse. */
+/* table.table {
     height: 400px;
     width: 100%;
     overflow: auto;
@@ -138,7 +128,7 @@ td{
     font-family: fantasy;
     font-size: 20px;
 
-}
+} */
 .des {
     display: block;
 }
@@ -158,9 +148,6 @@ td{
     border: none;
     border-radius: 0px;
 }
-
-.fzhn {}
-
 .bg {
     background-color: blueviolet;
 }
