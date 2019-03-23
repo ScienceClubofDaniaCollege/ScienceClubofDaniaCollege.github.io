@@ -97,10 +97,11 @@ const navBarI = `    <button class="navbar-toggler" type="button" data-toggle="c
 
 const navContainer = document.querySelector("#navbar");
 const navContainerI = document.querySelector("#navbari");
-if (navContainer == null){
+if (navContainer == null) {
     navContainerI.innerHTML = navBarI;
+} else {
+    navContainer.innerHTML = navBar;
 }
-else {navContainer.innerHTML = navBar;}
 
 
 // End of NHA's JavaScript
@@ -108,15 +109,16 @@ else {navContainer.innerHTML = navBar;}
 // start of zahins javascript
 var x = document.getElementById("sct");
 var y = document.getElementById("hidesct");
-function hidesct(){
-    if(x.style.left=="-75px"){
-        x.style.left="0px";
-        y.style.left="0px";
-        y.style.opacity="1";
-    }else{
-         x.style.left="-75px";
-         y.style.left="-70px";
-         y.style.opacity=".5";
+
+function hidesct() {
+    if (x.style.left == "-75px") {
+        x.style.left = "0px";
+        y.style.left = "0px";
+        y.style.opacity = "1";
+    } else {
+        x.style.left = "-75px";
+        y.style.left = "-70px";
+        y.style.opacity = ".4";
     }
 }
 // end of zahins javascript

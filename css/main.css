@@ -84,11 +84,9 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
-a{
-    text-decoration: none;
-    color:black;
-}
 #headerbox {
+    background-color: #7eacff;
+    border-radius: 0px 0px 50px 50px;
     position: inherit;
     z-index: -1;
     top: 50px;
@@ -101,6 +99,18 @@ a{
     color: black;
     white-space: nowrap;
 }
+.memberhtml{
+    color: white;
+    padding: 50px;
+    background-color: #7452ce;
+    position: inherit;
+    z-index: -1;
+}
+.memberhtml img{
+    width: 300px;
+    border-radius: 50% 50% 50% 50%;
+}
+/*
 img.dania{
     position: absolute;
     width: 100%;
@@ -108,12 +118,17 @@ img.dania{
     opacity: .3;
     z-index: -90;
 }
+*/
 table.table {
     height: 400px;
     width: 100%;
     overflow: auto;
 }
+td{
+    font-family: fantasy;
+    font-size: 20px;
 
+}
 .des {
     display: block;
 }
@@ -189,7 +204,7 @@ td{
 }
 #hidesct{
     left:-65px;
-    border: 9px solid blue;
+    border: 9px solid #6900ff;
     border-radius: 0px 50px 50px 0px;
     top:315px;
     z-index:998;
@@ -200,16 +215,24 @@ td{
     Opacity :.5;
 }
 #sct{
-    border: 2px solid blue;
+    border: 2px solid white;
     left:-75px;
     padding:5px;
     border-radius: 0px 10px 10px 0px;
     top:250px;
     z-index: 999;
     position: fixed;
-    background-color: #0a68e3;
+    background-color: #6900ff;
     width: 70px;
     height: 200px;
+    color: white;
+}
+#sct a{
+    font-size: 10px;
+    text-decoration: none;
+    color:white;
+    font-family: monospace;
+    text-shadow: 5px 5px 5px black;
 }
 @media screen and (max-width: 400px) {
     .memrow {
