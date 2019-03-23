@@ -23,6 +23,9 @@
 		<div class="loader">
 			<img src="../img/preloader.svg" alt="Loading...">
 		</div>
+		<!-- shortcut -->
+		<div class="sct">
+		</div>
 		<!-- start of navbar -->
 		<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbar" >
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,6 +86,13 @@
 		<hr>
 		<!-- end of headerbox -->
 		<!-- start of page contents -->
+      <!-- shortcut-->
+       <div id="hidesct" onclick="hidesct()"></div>
+        <div id="sct">
+            <p><a href="#biologist">Bio..</a></p>
+            <p><a href="#celld">Cell</a></p>
+            <p><a href="#bmi">BMI.C</a></p>
+        </div>
 		<div class="container-fluid text-center">
 			<h1 class="wlcmText">Welcome to Our Biology Section</h1>
 			<blockquote class="blockquote">
@@ -92,7 +102,7 @@
 		<br>
 		<!-- start of slider -->
 		<div class="container">
-			<h1 class="text-center">Biologist and Their Inventions</h1>
+			<h1 id="biologist" class="text-center">Biologist and Their Inventions</h1>
 		<div id="carouselExampleControls" class="carousel slide gellary card bg-light" data-ride="carousel">
 			<div class="carousel-inner" data-aos="zoom-in">
 				<div class="carousel-item active">
@@ -162,7 +172,7 @@
 		<!-- end of slider -->
 		<br><br><br><br><br>
 		<div class="container">
-			<h2 class="text-center">Cell Devision</h2>
+			<h2 id="celld" class="text-center">Cell Devision</h2>
 			<br>
 			<div class="card-deck">
 				<div class="card bg-white">
@@ -189,7 +199,7 @@
 		</div>
 		<br><br>
 		<div class="container-fluid text-center">
-			<h3>Calculate BMI & BMR</h3>
+			<h3 id="bmi">Calculate BMI & BMR</h3>
 			<iframe src="https://nurulhuda859.github.io/BMI-BMR-Calculator/" frameborder="0" scrolling="no" width="100%" height="1100"></iframe>
 		</div>
 		<br>
