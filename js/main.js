@@ -112,11 +112,11 @@ function hidesct(){
     if(x.style.left=="-75px"){
         x.style.left="0px";
         y.style.left="0px";
-        y.style.opacity=".5";
+        y.style.opacity="1";
     }else{
          x.style.left="-75px";
-         y.style.left="-65px";
-         y.style.opacity="1";
+         y.style.left="-70px";
+         y.style.opacity=".5";
     }
 }
 // end of zahins javascript
