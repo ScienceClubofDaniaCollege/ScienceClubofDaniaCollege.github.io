@@ -63,6 +63,16 @@
   height: 200px;
 }
 
+/* iframe */
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+
+
+
 /* End of NHA's CSS */
 
 
