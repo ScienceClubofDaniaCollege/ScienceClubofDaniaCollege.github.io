@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en" class="noscroll"  id="html">
 	<head>
+		<!-- Font aowsum -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -87,8 +89,8 @@
 		<!-- end of headerbox -->
 		<!-- start of page contents -->
       <!-- shortcut-->
-       <div id="hidesct" onclick="hidesct()"></div>
-        <div id="sct">
+       <div style="left: -70px; opacity: 0.4;" id="hidesct" onclick="hidesct()"></div>
+        <div style="left: -75px;" id="sct">
             <p><a href="#biologist">Bio..</a></p>
             <p><a href="#celld">Cell</a></p>
             <p><a href="#bmi">BMI.C</a></p>
@@ -201,10 +203,9 @@
 		<div class="container-fluid text-center">
 			<h3 id="bmi">Calculate BMI & BMR</h3>
 			<iframe src="https://nurulhuda859.github.io/BMI-BMR-Calculator/" frameborder="0" scrolling="no" width="100%" height="1100"></iframe>
-		</div>
-		<br>
-		<br>
-		<br>
+		</div><br>
+		<div id="footer">
+        </div>
 		<!-- end of page contents -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -212,6 +213,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 		<!-- Main JavaScript -->
 		<script src="../js/main.js"></script>
+		<script src="../dev/footer.js"></script>
 		<!-- <script src="../js/slidebox.js"></script> -->
 		<!-- AOS js -->
 		<script> AOS.init({duration:800,}); </script>
