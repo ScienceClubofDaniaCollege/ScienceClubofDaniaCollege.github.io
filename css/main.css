@@ -186,7 +186,7 @@ i {
     transform: translateX(-50%);
     background-color: transparent
 }
-a:hover{
+nav a:hover{
     font-family: sans-serif;
     text-shadow: 5px 5px 5px black;
 }
