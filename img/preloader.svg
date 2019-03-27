@@ -12,7 +12,7 @@
 		.st0{fill:#10C62F;}
 		.st2{fill:#E6EFE8;}
 		.st1{fill:#26CEDB;}
-		.st3{fill:#000;}
+		.st3{fill:#ebebeb;}
 		.st2 {
   opacity:.4;
   animation-name: spin;
