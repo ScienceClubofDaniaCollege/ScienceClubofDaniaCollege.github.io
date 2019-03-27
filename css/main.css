@@ -139,18 +139,6 @@ td{
 .card {
     box-shadow: 5px 9px 18px 0px rgba(32, 33, 36, 0.28);
 }
-
-.footer,
-.fzhn {
-    width: 100%;
-    height: 200px;
-    background-color: #1a1433;
-    color: white;
-    font-family: monospace;
-    font-size: 13px;
-    border: none;
-    border-radius: 0px;
-}
 .bg {
     background-color: blueviolet;
 }
@@ -169,6 +157,7 @@ td{
 }
 
 .icon {
+    position: relative;
     align-items: center;
     width: 100%;
     height: 30px;
@@ -220,12 +209,6 @@ td{
     text-decoration: none;
     color:white;
     font-family: monospace;
-}
-@media screen and (max-width: 777px) {
-
-.footer,.fzhn {
-        height: 200px;
-    }
 }
 @media screen and (max-width: 400px) {
     .memrow {
