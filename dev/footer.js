@@ -105,9 +105,9 @@ const footerhtml = `
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <i class="fas fa-home mr-3"></i> Dhaka, Donia 1236, Bangladesh</p>
+            <i class="fas fa-home mr-3"></i> Dhaka, Dsnia 1236, Bangladesh</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i> dania@gmail.com</p>
+            <i class="fas fa-envelope mr-3"></i> daniascienceclub@gmail.com</p>
           <p>
             <i class="fas fa-phone mr-3"></i> +8801787849609</p>
           <p>
@@ -122,7 +122,7 @@ const footerhtml = `
     </div>
 
     <div class="footer-copyright text-center py-3">Developed by:
-      <a href="https://nhas.me/">Nurul Huda</a>, <a href="https://zahin.cf/">Md zahin Afsar</a>
+      <a href="https://nhas.me/">Nurul Huda (Apon) & </a>, <a href="https://zahin.cf/">Md zahin Afsar</a>
     </div>
 
 
