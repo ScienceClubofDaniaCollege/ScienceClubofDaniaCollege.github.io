@@ -107,10 +107,11 @@ if (navContainer == null) {
 // End of NHA's JavaScript
 
 // start of zahins javascript
-var x = document.getElementById("sct");
-var y = document.getElementById("hidesct");
+
 
 function hidesct() {
+  var x = document.getElementById("sct");
+var y = document.getElementById("hidesct");
     if (x.style.left == "-75px") {
         x.style.left = "0px";
         y.style.left = "0px";
