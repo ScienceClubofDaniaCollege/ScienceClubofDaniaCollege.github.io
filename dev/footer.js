@@ -105,7 +105,7 @@ const footerhtml = `
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <i class="fas fa-home mr-3"></i> Dhaka, Dsnia 1236, Bangladesh</p>
+            <i class="fas fa-home mr-3"></i> Dhaka, Dania 1236, Bangladesh</p>
           <p>
             <i class="fas fa-envelope mr-3"></i> daniascienceclub@gmail.com</p>
           <p>
