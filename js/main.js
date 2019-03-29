@@ -1,5 +1,7 @@
 // Start of NHA's JavaScript
 const navBar = `
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbari">
+
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -32,62 +34,56 @@ const navBar = `
         <li class="nav-item">
             <a class="nav-link" href="memberlist.html">Members List</a>
         </li>
-    <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Member
-</a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<a class="dropdown-item" href="form.html">Register</a>
-<a class="dropdown-item" href="login.html">Login</a>
-</div>
-</li>
+        <li class="nav-item">
+        <a class="nav-link" href="member-area.html">Member Area</a>
+      </li>
     </ul>
-</div>`
+</div>
+</nav>
+`
 
 
-const navBarI = `    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
-<ul class="navbar-nav">
-  <li class="nav-item active">
-    <a class="nav-link" href="index.html">Home</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Subjects
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="html/math.html">Math</a>
-      <a class="dropdown-item" href="html/physics.html">Physics</a>
-      <a class="dropdown-item" href="html/chemistry.html">Chemistry</a>
-      <a class="dropdown-item" href="html/biology.html">Biology</a>
-      <a class="dropdown-item" href="html/ict.html">ICT</a>
-    </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="html/gallery.html">Gallery</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="html/events.html">Events</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="html/about-us.html">About</a>
-  </li>
-  <li class="nav-item">
-            <a class="nav-link" href="html/memberlist.html">Members List</a>
-        </li>
-          <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Member
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="html/form.html">Register</a>
-      <a class="dropdown-item" href="html/login.html">Login</a>
-    </div>
-  </li>
-</ul>
-</div>`
+const navBarI = `
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbari">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Subjects
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="html/math.html">Math</a>
+        <a class="dropdown-item" href="html/physics.html">Physics</a>
+        <a class="dropdown-item" href="html/chemistry.html">Chemistry</a>
+        <a class="dropdown-item" href="html/biology.html">Biology</a>
+        <a class="dropdown-item" href="html/ict.html">ICT</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="html/gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="html/events.html">Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="html/about-us.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="html/memberlist.html">Members List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="html/member-area.html">Member Area</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+  `
 
 
 
