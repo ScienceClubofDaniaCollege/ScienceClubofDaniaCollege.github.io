@@ -1,17 +1,17 @@
 iframe{
-    margin-top: 70px;
+    margin-top: 20px;
     padding-bottom: 150px;
     position: fixed;
     height: 100%;
     width: 100%;
-    overflow:hidden;
     border: none;
 }
 .filterbtn{
+    padding: 1px;
     border-radius: 5px;
     z-index: 99;
-    position: absolute;
-    margin: 10px;
+    position: relative;
+    margin: 20px;
     width: 100px;
     height: 40px;
     text-align: center;
