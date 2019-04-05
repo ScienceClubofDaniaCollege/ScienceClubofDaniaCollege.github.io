@@ -83,8 +83,17 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
-div{
-    scroll-behavior: smooth;
+body{
+  scroll-behavior: smooth;
+}
+.active{
+
+}
+.nav-item{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
 }
 #headerbox {
     background-color: #7eacff;
@@ -112,26 +121,6 @@ div{
     width: 300px;
     border-radius: 50% 50% 50% 50%;
 }
-/*
-img.dania{
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    opacity: .3;
-    z-index: -90;
-}
-*/
-/* These were making the table worse. */
-/* table.table {
-    height: 400px;
-    width: 100%;
-    overflow: auto;
-}
-td{
-    font-family: fantasy;
-    font-size: 20px;
-
-} */
 .des {
     display: block;
 }
@@ -176,6 +165,9 @@ i {
     background-color: transparent
 }
 nav a:hover{
+    border-radius: 5px;
+    background-color:#006de4;
+    transition: .5s;
     font-family: sans-serif;
     text-shadow: 5px 5px 5px black;
 }
@@ -183,7 +175,7 @@ td{
     padding: 20px;
 }
 #hidesct{
-    border: 9px solid #6900ff;
+    border: 9px solid #007bff ;
     border-radius: 0px 50px 50px 0px;
     top:315px;
     z-index:998;
@@ -199,7 +191,7 @@ td{
     top:250px;
     z-index: 999;
     position: fixed;
-    background-color: #6900ff;
+    background-color: #007bff ;
     width: 70px;
     height: 200px;
     color: white;
