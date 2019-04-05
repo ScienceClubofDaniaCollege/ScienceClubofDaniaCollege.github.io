@@ -1,21 +1,11 @@
 iframe{
     margin-top: 70px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     position: fixed;
     height: 100%;
     width: 100%;
     overflow:hidden;
     border: none;
-}
-.gphoto{
-    float: left;
-    margin: 10px;
-}
-.photo{
-    border-radius: 6px;
-    border: 1px solid blue;
-    width: 290px;
-    height: 150px;
 }
 .filterbtn{
     border-radius: 5px;
@@ -29,13 +19,9 @@ iframe{
 .filterbtn a{
     color: white;
 }
-.title{
+.card-body{
+    background-color: #007bff;
     color: white;
-    border-radius: 6px;
-    border: none;
-    padding: 5px;
     text-align: center;
-    margin-top: 6px;
-    width: 280px;
-    background-color: aquamarine;
+
 }
