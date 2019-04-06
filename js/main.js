@@ -99,6 +99,11 @@ if (navContainer == null) {
     navContainer.innerHTML = navBar;
 }
 
+const img = document.getElementsByTagName('img');
+for (let i = 0; i < img.length; i++) {
+  // console.log(i+1 +' img tag');
+  if (!img[i].alt) console.log('img tag without alt attribute');
+}
 
 // End of NHA's JavaScript
 
