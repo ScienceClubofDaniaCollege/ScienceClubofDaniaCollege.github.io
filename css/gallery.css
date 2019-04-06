@@ -1,27 +1,17 @@
 iframe{
-    margin-top: 70px;
-    padding-bottom: 200px;
+    margin-top: 20px;
+    padding-bottom: 150px;
     position: fixed;
     height: 100%;
     width: 100%;
-    overflow:hidden;
     border: none;
 }
-.gphoto{
-    float: left;
-    margin: 10px;
-}
-.photo{
-    border-radius: 6px;
-    border: 1px solid blue;
-    width: 290px;
-    height: 150px;
-}
 .filterbtn{
+    padding: 1px;
     border-radius: 5px;
     z-index: 99;
-    position: absolute;
-    margin: 10px;
+    position: relative;
+    margin: 20px;
     width: 100px;
     height: 40px;
     text-align: center;
@@ -29,13 +19,9 @@ iframe{
 .filterbtn a{
     color: white;
 }
-.title{
+.card-body{
+    background-color: #007bff;
     color: white;
-    border-radius: 6px;
-    border: none;
-    padding: 5px;
     text-align: center;
-    margin-top: 6px;
-    width: 280px;
-    background-color: aquamarine;
+
 }
