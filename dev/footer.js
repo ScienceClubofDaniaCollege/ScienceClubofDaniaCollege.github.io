@@ -53,9 +53,11 @@ const footerhtml = `
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
 
-          <h6 class="text-uppercase font-weight-bold">Dania Science Club</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Contents are under development.</p>
+          <h6 class="text-uppercase font-weight-bold">Send a massage</h6>
+         <form>
+             Name:<input type="text" name="text">Email:<input type="email" name="text"><br>
+             massage:<textarea name="box" id="box" cols="30" rows="3"></textarea>
+         </form>
 
         </div>
 
