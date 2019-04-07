@@ -121,7 +121,7 @@ const footerhtml = `
     </div>
 
     <div class="footer-copyright text-center py-3">Developed by:
-      <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="https://zahin.cf/">Md Zahin Afsar</a>
+      <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="http://zahin.cf/">Md Zahin Afsar</a>
     </div>
 
 
