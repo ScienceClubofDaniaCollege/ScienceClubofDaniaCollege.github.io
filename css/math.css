@@ -1,16 +1,22 @@
-#showDesButton {
+
+#showbtn {
+	color: white;
+	text-align: center;
+	width: 100%;
     display: none;
 }
-    
-
-@media screen and (max-width: 450px) {
-  #showDesButton {
+@media screen and (max-width: 500px) {
+  #showbtn {
     display: block;
     }
-    th:nth-of-type(4),td:nth-of-type(4) {
+    .des {
 
     display: none;
     
     }
+    .hide {
+
+    display: block;
     
+    }
   }
