@@ -83,6 +83,11 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+.mt-3, .my-3{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -20px
+}
 body{
   scroll-behavior: smooth;
 }
