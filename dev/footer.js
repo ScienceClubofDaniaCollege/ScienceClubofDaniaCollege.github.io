@@ -55,8 +55,7 @@ const footerhtml = `
 
           <h6 class="text-uppercase font-weight-bold">Dania Science Club</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>acrgxzdfzvsgfcbwster <br> vhcnvtyvjehscrtdsghv <br> dytbumvdnscgbdfetygtb, <br> mrvnecrwfyhtjrvnecbg
-          cevytcgbgthy <br> rtncgbethnegbgte.</p>
+          <p>Contents are under development.</p>
 
         </div>
 
@@ -66,16 +65,16 @@ const footerhtml = `
           <h6 class="text-uppercase font-weight-bold">Events</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">fgydhfvbd</a>
+            <a href="#!">n/a</a>
           </p>
           <p>
-            <a href="#!">dfvyndxcnxfvb</a>
+            <a href="#!">n/a</a>
           </p>
           <p>
-            <a href="#!">dcfvgdchfg</a>
+            <a href="#!">n/a</a>
           </p>
           <p>
-            <a href="#!">edrvtchsfhgb</a>
+            <a href="#!">n/a</a>
           </p>
 
         </div>
@@ -86,16 +85,16 @@ const footerhtml = `
           <h6 class="text-uppercase font-weight-bold">Contributors</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">sdfzgcv gz</a>
+            <a href="#!">Nurul Huda</a>
           </p>
           <p>
-            <a href="#!">acgxcsd cvf</a>
+            <a href="#!">Zahin Afsar</a>
           </p>
           <p>
-            <a href="#!">aszscfc</a>
+            <a href="#!">..</a>
           </p>
           <p>
-            <a href="#!">sczdxv</a>
+            <a href="#!">..</a>
           </p>
 
         </div>
@@ -111,7 +110,7 @@ const footerhtml = `
           <p>
             <i class="fas fa-phone mr-3"></i> +8801787849609</p>
           <p>
-            <i class="fas fa-print mr-3"></i> +nurulhuda????</p>
+            <i class="fas fa-phone mr-3"></i> +8801948297466</p>
 
         </div>
 
@@ -122,7 +121,7 @@ const footerhtml = `
     </div>
 
     <div class="footer-copyright text-center py-3">Developed by:
-      <a href="https://nhas.me/">Nurul Huda (Apon) & </a>, <a href="https://zahin.cf/">Md zahin Afsar</a>
+      <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="https://zahin.cf/">Md Zahin Afsar</a>
     </div>
 
 
