@@ -1,9 +1,9 @@
 const footerhtml = `
 <br><br><br>
 
-<footer class="page-footer font-small" style="background-color: #000000c4;color:#d1d1d1;">
+<footer class="page-footer font-small">
 
-    <div style="background-color: #6351ce;">
+    <div class="footup">
         <div class="container">
 
             <div class="row py-4 d-flex align-items-center">
@@ -108,10 +108,10 @@ const footerhtml = `
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Messege:</label>
                         <div class="col-sm-9">
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="1.5"></textarea>
                         </div>
                     </div>
-
+                    <button class="sendbtn bg-primary">SEND</button>
                 </form>
 
             </div>

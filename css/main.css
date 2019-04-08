@@ -83,6 +83,21 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+.footup{
+   background-color: #6351ce;
+}
+.page-footer{
+    background-color: #000000c4;
+    color:#d5d5d5;
+}
+.sendbtn{
+    float: right;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 .mt-3, .my-3{
     margin-left: 20px;
     margin-right: 20px;
