@@ -89,29 +89,33 @@ const footerhtml = `
             <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-4">
 
 
-                <h5 class="text-uppercase font-weight-bold">Send a massage</h5>
+                <h5 class="text-uppercase font-weight-bold">Send a message</h5>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
 
-                <form>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Name:</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="Your name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Email:</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="form-control" placeholder="email@example.com">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Messege:</label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" rows="1.5"></textarea>
-                        </div>
-                    </div>
-                    <button class="sendbtn bg-primary">SEND</button>
+                <form style="positon: relative">
+                <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Name:</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="Your name">
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Email:</label>
+                <div class="col-sm-9">
+                <input type="email" class="form-control" placeholder="email@example.com">
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Messege:</label>
+                <div class="col-sm-9">
+                <textarea class="form-control" rows="1.5"></textarea>
+                </div>
+                </div>
+                <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()">Send</button>
+                
+                <script>
+
+                </script>
                 </form>
 
             </div>
@@ -129,3 +133,19 @@ const footerhtml = `
 </footer>`
 const footContainer = document.getElementById("footer");
 footContainer.innerHTML = footerhtml;
+async function  handleFeedbackForm() {
+    const sndBtn = document.querySelector('.sendbtn');
+    sndBtn.innerHTML = '<div class="loader-spinner" style="display: inline-block"></div>'
+    sndBtn.setAttribute('disabled', '');
+    await fetch('https://dscapi.herokuapp.com/feedback', {mode: 'no-cors'})
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(text) {
+            console.log(text);
+        });
+    console.log('test');
+    sndBtn.innerHTML = 'Sent'
+
+    
+}
