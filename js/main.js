@@ -1,104 +1,61 @@
 // Start of NHA's JavaScript
-const navBar = `
+function genNav(p0, p1){
+  return `
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbari">
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+<ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="${p0}index.html" id="home">Home</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Subjects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="math.html">Math</a>
-                <a class="dropdown-item" href="physics.html">Physics</a>
-                <a class="dropdown-item" href="chemistry.html">Chemistry</a>
-                <a class="dropdown-item" href="biology.html">Biology</a>
-                <a class="dropdown-item" href="ict.html">ICT</a>
-            </div>
+            <a class="dropdown-item" href="${p1}math.html">Math</a>
+            <a class="dropdown-item" href="${p1}physics.html">Physics</a>
+                <a class="dropdown-item" href="${p1}chemistry.html">Chemistry</a>
+                <a class="dropdown-item" href="${p1}biology.html">Biology</a>
+                <a class="dropdown-item" href="${p1}ict.html">ICT</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="${p1}gallery.html"  id="gallery">Gallery</a>
+                </li>
+        <li class="nav-item">
+            <a class="nav-link" href="${p1}events.html" id="events">Events</a>
+            </li>
+        <li class="nav-item">
+        <a class="nav-link" href="${p1}about-us.html"  id="about">About </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="${p1}memberlist.html" id="member-list">Members List</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
+        <a class="nav-link" href="${p1}member-area.html" id="member-area">Member Area</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about-us.html">About </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="memberlist.html">Members List</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="member-area.html">Member Area</a>
-      </li>
-    </ul>
-</div>
-</nav>
-`
+        </ul>
+        </div>
+        </nav>
+        `
+}
 
-
-const navBarI = `
-<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbari">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Subjects
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="html/math.html">Math</a>
-        <a class="dropdown-item" href="html/physics.html">Physics</a>
-        <a class="dropdown-item" href="html/chemistry.html">Chemistry</a>
-        <a class="dropdown-item" href="html/biology.html">Biology</a>
-        <a class="dropdown-item" href="html/ict.html">ICT</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="html/gallery.html">Gallery</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="html/events.html">Events</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="html/about-us.html">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="html/memberlist.html">Members List</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="html/member-area.html">Member Area</a>
-    </li>
-  </ul>
-  </div>
-</nav>
-  `
-
-
-
-
-
-
+const navBar = genNav('../', '');
+const navBarI = genNav('', 'html/');
 
 const navContainer = document.querySelector("#navbar");
 const navContainerI = document.querySelector("#navbari");
+
 if (navContainer == null) {
     navContainerI.innerHTML = navBarI;
-} else {
+  } else {
     navContainer.innerHTML = navBar;
-}
-
+  }
+  
 const img = document.getElementsByTagName('img');
 for (let i = 0; i < img.length; i++) {
   // console.log(i+1 +' img tag');
