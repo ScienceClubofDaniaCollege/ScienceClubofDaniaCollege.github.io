@@ -92,23 +92,23 @@ const footerhtml = `
                 <h5 class="text-uppercase font-weight-bold">Send a message</h5>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
 
-                <form style="positon: relative">
+                <form style="positon: relative" id="feedback-form">
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Name:</label>
                 <div class="col-sm-9">
-                <input type="text" class="form-control" placeholder="Your name">
+                <input name="name" type="text" class="form-control" placeholder="Your name" required>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Email:</label>
                 <div class="col-sm-9">
-                <input type="email" class="form-control" placeholder="email@example.com">
+                <input name="email" type="email" class="form-control" placeholder="email@example.com" required>
                 </div>
                 </div>
                 <div class="form-group row">
-                <label class="col-sm-3 col-form-label">Messege:</label>
+                <label class="col-sm-3 col-form-label">Message:</label>
                 <div class="col-sm-9">
-                <textarea class="form-control" rows="1.5"></textarea>
+                <textarea name="message" class="form-control" rows="1.5" required></textarea>
                 </div>
                 </div>
                 <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()">Send</button>
@@ -133,19 +133,42 @@ const footerhtml = `
 </footer>`
 const footContainer = document.getElementById("footer");
 footContainer.innerHTML = footerhtml;
+
+
+const feedbackForm = document.getElementById("feedback-form");
+const sndBtn = document.querySelector('.sendbtn');
 async function  handleFeedbackForm() {
-    const sndBtn = document.querySelector('.sendbtn');
-    sndBtn.innerHTML = '<div class="loader-spinner" style="display: inline-block"></div>'
+    sndBtn.innerHTML = '<div class="loader-spinner" style="display: inline-block"></div>';
+    sndBtn.classList.remove('bg-primary')
+    sndBtn.classList.add('btn-warning')
     sndBtn.setAttribute('disabled', '');
-    await fetch('https://dscapi.herokuapp.com/feedback', {mode: 'no-cors'})
+
+    let formData = new FormData(feedbackForm);
+    let name = formData.get('name');
+    let email = formData.get('email');
+    let message = formData.get('message');
+    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`,);
+    
+    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, {mode: 'no-cors'})
         .then(function(response) {
+            console.log(response);
             return response.text();
         })
         .then(function(text) {
             console.log(text);
         });
     console.log('test');
-    sndBtn.innerHTML = 'Sent'
+
+    sndBtn.innerHTML = '<i class="far fa-check-circle"></i>'
+    sndBtn.classList.remove('btn-warning')
+    sndBtn.classList.add('btn-success')
+
+setTimeout(()=>{
+    feedbackForm.reset();
+    sndBtn.innerHTML = 'Send';sndBtn.removeAttribute('disabled');
+    sndBtn.classList.remove('btn-success')
+    sndBtn.classList.add('bg-primary')
+}, 1200)
 
     
 }
