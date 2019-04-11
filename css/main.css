@@ -113,6 +113,9 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+.navbar-nav .nav-link {
+    margin: 7px;
+}
 .navbar{
     transition: .5s;
 }
