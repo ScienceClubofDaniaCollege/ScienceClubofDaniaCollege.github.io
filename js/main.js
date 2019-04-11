@@ -50,7 +50,7 @@ const navBarI = `
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
   <ul class="navbar-nav">
-    <li class="nav-item active">
+    <li class="nav-item opend">
       <a class="nav-link" href="index.html">Home</a>
     </li>
     <li class="nav-item dropdown">
@@ -82,13 +82,7 @@ const navBarI = `
     </li>
   </ul>
   </div>
-</nav>
-  `
-
-
-
-
-
+</nav>`
 
 
 const navContainer = document.querySelector("#navbar");
@@ -122,5 +116,19 @@ var y = document.getElementById("hidesct");
         y.style.left = "-70px";
         y.style.opacity = ".4";
     }
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+var x = document.querySelector('.navbar')
+
+ if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+   x.classList.remove('bg-primary');
+   x.classList.add('bg-dark');
+ } else {
+  x.classList.remove('bg-dark');
+   x.classList.add('bg-primary');
+ }
 }
 // end of zahins javascript
