@@ -113,6 +113,12 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+.navbar{
+    transition: .5s;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
 .footup{
    background-color: #6351ce;
 }
@@ -136,7 +142,10 @@
 body{
   scroll-behavior: smooth;
 }
-
+.opend{
+ background-color: black;
+ border-radius: 5px 5px 5px 5px;
+}
 .nav-item{
     text-align: center;
     margin-right: 15px;
@@ -219,6 +228,7 @@ td{
     padding: 20px;
 }
 #hidesct{
+    transition: .5s;
     border: 9px solid #007bff ;
     border-radius: 0px 50px 50px 0px;
     top:315px;
@@ -229,6 +239,7 @@ td{
     height: 70px;
 }
 #sct{
+    transition: .5s;
     border: 2px solid white;
     padding:5px;
     border-radius: 0px 10px 10px 0px;

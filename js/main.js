@@ -80,4 +80,18 @@ var y = document.getElementById("hidesct");
         y.style.opacity = ".4";
     }
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+var x = document.querySelector('.navbar')
+
+ if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+   x.classList.remove('bg-primary');
+   x.classList.add('bg-dark');
+ } else {
+  x.classList.remove('bg-dark');
+   x.classList.add('bg-primary');
+ }
+}
 // end of zahins javascript
