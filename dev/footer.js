@@ -111,7 +111,7 @@ const footerhtml = `
                 <textarea name="message" class="form-control" rows="1.5" required></textarea>
                 </div>
                 </div>
-                <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()">Send</button>
+                <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()" style="transition: .5s;">Send</button>
                 
                 <script>
 
@@ -151,8 +151,7 @@ async function  handleFeedbackForm() {
     
     await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, {mode: 'no-cors'})
         .then(function(response) {
-            console.log(response);
-            return response.text();
+            return response;
         })
         .then(function(text) {
             console.log(text);
