@@ -113,6 +113,9 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */
+.navbar-nav .nav-link {
+    margin: 7px;
+}
 .navbar{
     transition: .5s;
 }
@@ -222,7 +225,7 @@ i {
 nav a:hover{
     border-radius: 0px 15px 12px 10px;
     transition: .5s;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 9px 18px 0px rgba(32, 33, 36, 0.28);
 }
 td{
     padding: 20px;
