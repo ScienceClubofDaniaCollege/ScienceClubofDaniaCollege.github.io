@@ -85,15 +85,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 var x = document.querySelector('.navbar')
-
- if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-   x.classList.remove('before');
-   x.classList.add('after');
-   x.classList.add('box-shadow');
- } else {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  x.classList.remove('before');
+  x.classList.add('after');
+  x.classList.add('box-shadow');
+} else {
   x.classList.remove('after');
   x.classList.remove('box-shadow');
   x.classList.add('before');
- }
+}
 }
 // end of zahins javascript

@@ -1,6 +1,6 @@
 /* Start of NHA's CSS */
     /* active menu in navbar */
-.home #home, .gallery #gallery, .events #events, .about #about,  .member-list #member-list, .member-area #member-area {
+.home #home, .gallery #gallery, .events #events, .about #about, .member-list #member-list, .member-area #member-area, .about #about{
     color: aliceblue;
     border-radius: 0px 15px 12px 10px;
     background-color: #343a40;
@@ -131,6 +131,11 @@
 }
 .before{
     background-color: transparent;
+}
+/* add class name of pages with iframe */
+.member-area .before,.gallery .before,.member-list .before{
+    background-color: white;
+    box-shadow: 0 0 3px 0px black;
 }
 .after{
     background-color: white;
