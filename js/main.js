@@ -96,4 +96,18 @@ var x = document.querySelector('.navbar')
   x.classList.add('before');
  }
 }
+function validation(){
+    var a = document.forms["feedback"]["name"].value;
+    var b = document.forms["feedback"]["email"].value;
+    var c = document.forms["feedback"]["message"].value;
+    var y = document.querySelector('.sendbtn');
+    if (a && b && c !== ""){
+      y.classList.remove('disabled');
+    }else{
+      y.classList.add('disabled');
+    }
+}
+function reload(){
+    document.location.reload()
+}
 // end of zahins javascript

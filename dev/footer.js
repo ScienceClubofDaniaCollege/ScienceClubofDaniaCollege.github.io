@@ -92,30 +92,28 @@ const footerhtml = `
                 <h5 class="text-uppercase font-weight-bold">Send a message</h5>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
 
-                <form style="positon: relative" id="feedback-form">
+                <form name="feedback" style="positon: relative" id="feedback-form">
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Name:</label>
                 <div class="col-sm-9">
-                <input name="name" type="text" class="form-control" placeholder="Your name" required>
+                <input  onkeyup="validation()"  name="name" type="text" class="form-control" placeholder="Your name" required>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Email:</label>
                 <div class="col-sm-9">
-                <input name="email" type="email" class="form-control" placeholder="email@example.com" required>
+                <input  onkeyup="validation()"  name="email" type="email" class="form-control" placeholder="email@example.com" required>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Message:</label>
                 <div class="col-sm-9">
-                <textarea name="message" class="form-control" rows="1.5" required></textarea>
+                <textarea  onkeyup="validation()"  name="message" class="form-control" rows="1.5" required></textarea>
                 </div>
                 </div>
-                <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()" style="transition: .5s;">Send</button>
+                <button class="sendbtn bg-primary readonly disabled" type="button" onclick="handleFeedbackForm();reload();"style="transition: .5s;">Send</button>
                 
-                <script>
-
-                </script>
+                <br><br><br>
                 </form>
 
             </div>
@@ -124,7 +122,6 @@ const footerhtml = `
 
 
     </div>
-    <hr>
     <div class="footer-copyright text-center py-3">Developed by:
         <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="http://zahin.cf/">Md Zahin Afsar</a>
     </div>
