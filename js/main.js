@@ -1,10 +1,10 @@
 // Start of NHA's JavaScript
 function genNav(p0, p1){
   return `
-<nav class="navbar navbar-dark bg-primary navbar-expand-lg sticky-top box-shadow" id="navbari">
+<nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
+<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarNavDropdown">
 <ul class="navbar-nav">
@@ -86,12 +86,14 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 var x = document.querySelector('.navbar')
 
- if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-   x.classList.remove('bg-primary');
-   x.classList.add('bg-dark');
+ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+   x.classList.remove('before');
+   x.classList.add('after');
+   x.classList.add('box-shadow');
  } else {
-  x.classList.remove('bg-dark');
-   x.classList.add('bg-primary');
+  x.classList.remove('after');
+  x.classList.remove('box-shadow');
+  x.classList.add('before');
  }
 }
 // end of zahins javascript
