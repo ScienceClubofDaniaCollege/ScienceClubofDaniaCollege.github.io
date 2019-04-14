@@ -62,6 +62,20 @@ for (let i = 0; i < img.length; i++) {
   if (!img[i].alt) console.log('img tag without alt attribute');
 }
 
+
+
+
+// adding head content
+const head = document.getElementsByTagName('head');
+const headContent = `
+<!-- Font Awsome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+`
+const addHeadContent = () => {
+  head[0].innerHTML += headContent;
+}
+addHeadContent();
+
 // End of NHA's JavaScript
 
 // start of zahins javascript
