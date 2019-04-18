@@ -158,6 +158,7 @@ async function  handleFeedbackForm() {
     sndBtn.innerHTML = '<i class="far fa-check-circle"></i>'
     sndBtn.classList.remove('btn-warning')
     sndBtn.classList.add('btn-success')
+    sndBtn.classList.add('disabled')
 
 setTimeout(()=>{
     feedbackForm.reset();
