@@ -1,21 +1,23 @@
 iframe{
-    margin-top: 120px;
-    padding-bottom: 150px;
+    z-index: -2;
+    top: 75px;
+    padding-bottom: 100px;
     position: fixed;
     height: 100%;
     width: 100%;
     border: none;
 }
 .filterbtn{
-    top:100px;
+    top:-105px;
     padding: 1px;
     border-radius: 5px;
-    z-index: 99;
-    position: relative;
+    position: relative
+    float:right;
     margin: 20px;
     width: 100px;
     height: 40px;
     text-align: center;
+    float: right; 
 }
 .filterbtn a{
     color: white;
@@ -25,4 +27,15 @@ iframe{
     color: white;
     text-align: center;
 
+}
+#navbar{
+    z-index: -1;
+}
+@media screen and (max-width: 991px) {
+    .filterbtn{
+    top:-110px; 
+}
+iframe{
+    top: 60px;
+}
 }
