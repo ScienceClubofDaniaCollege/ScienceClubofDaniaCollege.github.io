@@ -11,18 +11,9 @@ function genNav(p0, p1){
         <li class="nav-item">
             <a class="nav-link" href="${p0}index.html" id="home">Home</a>
         </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Subjects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="${p1}math.html">Math</a>
-            <a class="dropdown-item" href="${p1}physics.html">Physics</a>
-                <a class="dropdown-item" href="${p1}chemistry.html">Chemistry</a>
-                <a class="dropdown-item" href="${p1}biology.html">Biology</a>
-                <a class="dropdown-item" href="${p1}ict.html">ICT</a>
-                </div>
-                </li>
+        <li class="nav-item">
+        <a class="nav-link" href="${p1}subject.html"  id="subject">Subjects</a>
+        </li>
                 <li class="nav-item">
                 <a class="nav-link" href="${p1}gallery.html"  id="gallery">Gallery</a>
                 </li>
@@ -30,7 +21,7 @@ function genNav(p0, p1){
             <a class="nav-link" href="${p1}events.html" id="events">Events</a>
             </li>
         <li class="nav-item">
-        <a class="nav-link" href="${p1}about-us.html"  id="about">About </a>
+        <a class="nav-link" href="${p1}about-us.html"  id="about">About</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="${p1}memberlist.html" id="member-list">Members List</a>
@@ -86,13 +77,13 @@ addHeadContent();
 function hidesct() {
   var x = document.getElementById("sct");
 var y = document.getElementById("hidesct");
-    if (x.style.left == "-75px") {
+    if (x.style.left == "-205px") {
         x.style.left = "0px";
         y.style.left = "0px";
         y.style.opacity = "1";
     } else {
-        x.style.left = "-75px";
-        y.style.left = "-70px";
+        x.style.left = "-205px";
+        y.style.left = "-200px";
         y.style.opacity = ".4";
     }
 }
