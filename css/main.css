@@ -121,7 +121,7 @@
 #about img{
     margin-left: 50%;
     transform: translateX(-50%);
-    padding-top: 20px;
+    margin-top: 10px;
     width: 200px;
     height: 200px;
 }  
