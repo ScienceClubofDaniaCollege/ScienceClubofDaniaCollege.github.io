@@ -117,7 +117,14 @@
 
 /* ----------------------------------------------------------- */
 
-/* Start of Zahin's CSS */    
+/* Start of Zahin's CSS */  
+#about img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+}  
 .navbar-toggler{
     background-color: white;
 }
