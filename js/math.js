@@ -67,10 +67,10 @@ var slideNames = [
             ];
 
 var slideImages = [
-    "../img/math/srinivasa.png",
-    "../img/math/einstein.png",
-    "../img/math/pythagoras.png",
-    "../img/math/gauss.png",
+    "../img/math/srinivasa.jpg",
+    "../img/math/einstein.jpg",
+    "../img/math/pythagoras.jpg",
+    "../img/math/gauss.jpg",
     ];
 var slideURLs = [
     "https://en.wikipedia.org/wiki/Srinivasa_Ramanujan",
