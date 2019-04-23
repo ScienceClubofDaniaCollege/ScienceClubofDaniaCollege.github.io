@@ -6,7 +6,7 @@
 	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
 ]>
 <svg  xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 width="250" height="250" viewBox="0 0 250 250" style="overflow:visible;enable-background:new 0 0 250 250" xml:space="preserve"
+	 width="250" height="250" viewBox="0 0 250 250" style="overflow:visible;enable-background:new 0 0 250 250;padding-top: 10px;" xml:space="preserve"
 	>
 	<style type="text/css">
 	<![CDATA[
