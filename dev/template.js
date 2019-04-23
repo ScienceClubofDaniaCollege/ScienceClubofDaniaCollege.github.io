@@ -28,7 +28,7 @@ var gslide4Url = document.getElementById('slide-4-url');
 
 
 function createSlide(){
-    gsectionName.innerText = sectionName;
+    // gsectionName.innerText = sectionName;
     gsliderName.innerText = sliderName;
     // creating slide-1
     gslide1Name0.innerText = slideNames[0];

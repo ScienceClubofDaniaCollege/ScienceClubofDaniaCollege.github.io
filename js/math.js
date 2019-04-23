@@ -1,7 +1,7 @@
 // Start of NHA's JavaScript
 var gsliderName = document.getElementById('slider-name');
-var gsectionName = document.getElementById('section-name');
-// selecting slide-1
+// var gsectionName = document.getElementById('section-name');
+// selecting slide-1 
 var gslide1Name0 = document.getElementById('slide-1-name0');
 var gslide1Name1 = document.getElementById('slide-1-name1');
 var gslide1Img = document.getElementById('slide-1-img');
@@ -28,7 +28,7 @@ var gslide4Url = document.getElementById('slide-4-url');
 
 
 function createSlide(){
-    gsectionName.innerText = sectionName;
+    // gsectionName.innerText = sectionName;
     gsliderName.innerText = sliderName;
     // creating slide-1
     gslide1Name0.innerText = slideNames[0];
