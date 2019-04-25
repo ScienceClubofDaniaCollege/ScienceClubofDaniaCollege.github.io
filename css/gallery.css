@@ -2,7 +2,7 @@
     padding-left: 0;
 }
 iframe{
-    z-index: -2;
+    z-index: -999;
     top: 75px;
     padding-bottom: 100px;
     position: fixed;
@@ -11,32 +11,36 @@ iframe{
     border: none;
 }
 .filterbtn{
-    top:-105px;
-    padding: 1px;
+    position: absolute;
+    right: 100px;
+    top: 14px;
+    color: black; 
     border-radius: 5px;
-    position: relative
-    float:right;
-    margin: 20px;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    float: right; 
 }
 .filterbtn a{
     color: white;
 }
 .card-body{
-    background-color: #162b42;
+    background-color: #63809f;
     color: white;
     text-align: center;
 
 }
+.loginbtn{
+    position: fixed;
+    top:8px;
+}
 #navbar{
-    z-index: -1;
+    z-index: -10;
 }
 @media screen and (max-width: 991px) {
-    .filterbtn{
-    top:-110px; 
+.filterbtn{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
+}
+.loginbtn{
+    top:4px;
 }
 iframe{
     top: 60px;
