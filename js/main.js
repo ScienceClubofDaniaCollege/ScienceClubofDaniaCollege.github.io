@@ -1,5 +1,5 @@
 // Start of NHA's JavaScript
-function genNav(p0, p1){
+function genNav(p0, p1) {
   return `
 <nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
 
@@ -42,11 +42,11 @@ const navContainer = document.querySelector("#navbar");
 const navContainerI = document.querySelector("#navbari");
 
 if (navContainer == null) {
-    navContainerI.innerHTML = navBarI;
-  } else {
-    navContainer.innerHTML = navBar;
-  }
-  
+  navContainerI.innerHTML = navBarI;
+} else {
+  navContainer.innerHTML = navBar;
+}
+
 const img = document.getElementsByTagName('img');
 for (let i = 0; i < img.length; i++) {
   // console.log(i+1 +' img tag');
@@ -76,19 +76,19 @@ addHeadContent();
 
 function hidesct() {
   var x = document.getElementById("sct");
-var y = document.getElementById("hidesct");
-    if (x.style.left == "-205px") {
-        x.style.left = "0px";
-        y.style.left = "0px";
-        y.style.opacity = "1";
-    } else {
-        x.style.left = "-205px";
-        y.style.left = "-200px";
-        y.style.opacity = ".4";
-    }
+  var y = document.getElementById("hidesct");
+  if (x.style.left == "-205px") {
+    x.style.left = "0px";
+    y.style.left = "0px";
+    y.style.opacity = "1";
+  } else {
+    x.style.left = "-205px";
+    y.style.left = "-200px";
+    y.style.opacity = ".4";
+  }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   var x = document.querySelector('.navbar')

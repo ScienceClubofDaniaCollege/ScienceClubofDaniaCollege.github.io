@@ -91,7 +91,7 @@ const navBarI = `    <button class="navbar-toggler" type="button" data-toggle="c
 const navContainer = document.querySelector("#navbar");
 const navContainerI = document.querySelector("#navbari");
 if (navContainer == null) {
-    navContainerI.innerHTML = navBarI;
+  navContainerI.innerHTML = navBarI;
 } else {
-    navContainer.innerHTML = navBar;
+  navContainer.innerHTML = navBar;
 }

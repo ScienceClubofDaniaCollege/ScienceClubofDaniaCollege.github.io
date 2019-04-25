@@ -1,14 +1,14 @@
 const name_slideContainer = document.getElementById('slide-container')
 
 // function for creating slider
-function createSlide(){
+function createSlide() {
     sliderNameContainer.innerText = sliderName;
     let i, status;
     for (i = 0; slideNames.length > i; i++) {
         if (i == 0) status = ' active';
-        else status='';
+        else status = '';
         let slide = `
-			<!-- start of slide-${i+1} -->
+			<!-- start of slide-${i + 1} -->
             <div class="carousel-item${status}">
                 <div class="h4">
                     <h4 id="slide-1-name0">${slideNames[i]}</h4>
@@ -22,38 +22,38 @@ function createSlide(){
                     <p id="slide-1-dtls">${slideDetails[i]}</p>
                 </div>
             </div>
-			<!-- end of slide-${i+1} -->
-            `         
-            slideContainer.innerHTML += slide;
-        }
+			<!-- end of slide-${i + 1} -->
+            `
+        slideContainer.innerHTML += slide;
+    }
 };
 
 // input the information of your slider
 var slideNames = [
-                "name1",
-                "name2",
-                "name3",
-                "name4"
-            ];
+    "name1",
+    "name2",
+    "name3",
+    "name4"
+];
 
 var slideImages = [
     "../img/uc.png",
     "../img/uc.png",
     "../img/uc.png",
     "../img/uc.png",
-    
-    ];
+
+];
 var wiki = "https://en.wikipedia.org/wiki/"
 var slideURLs = [
-    wiki+"link",
-    wiki+"link",
-    wiki+"link",
-    wiki+"link",
-    ];
+    wiki + "link",
+    wiki + "link",
+    wiki + "link",
+    wiki + "link",
+];
 var slideDetails = ["slide_description",
-                    "slide_description",
-                    "slide_description",
-                    "slide_description",
-    ];
+    "slide_description",
+    "slide_description",
+    "slide_description",
+];
 
 createSlide();

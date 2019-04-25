@@ -134,7 +134,7 @@ footContainer.innerHTML = footerhtml;
 
 const feedbackForm = document.getElementById("feedback-form");
 const sndBtn = document.querySelector('.sendbtn');
-async function  handleFeedbackForm() {
+async function handleFeedbackForm() {
     sndBtn.innerHTML = '<div class="loader-spinner" style="display: inline-block"></div>';
     sndBtn.classList.remove('bg-primary')
     sndBtn.classList.add('btn-warning')
@@ -144,13 +144,13 @@ async function  handleFeedbackForm() {
     let name = formData.get('name');
     let email = formData.get('email');
     let message = formData.get('message');
-    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`,);
-    
-    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, {mode: 'no-cors'})
-        .then(function(response) {
+    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`);
+
+    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, { mode: 'no-cors' })
+        .then(function (response) {
             return response;
         })
-        .then(function(text) {
+        .then(function (text) {
             console.log(text);
         });
     console.log('test');
@@ -160,24 +160,24 @@ async function  handleFeedbackForm() {
     sndBtn.classList.add('btn-success')
     sndBtn.classList.add('disabled')
 
-setTimeout(()=>{
-    feedbackForm.reset();
-    sndBtn.innerHTML = 'Send';sndBtn.removeAttribute('disabled');
-    sndBtn.classList.remove('btn-success')
-    sndBtn.classList.add('bg-primary')
-}, 1200)
+    setTimeout(() => {
+        feedbackForm.reset();
+        sndBtn.innerHTML = 'Send'; sndBtn.removeAttribute('disabled');
+        sndBtn.classList.remove('btn-success')
+        sndBtn.classList.add('bg-primary')
+    }, 1200)
 
-    
+
 }
 
-function validation(){
+function validation() {
     var a = document.forms["feedback"]["name"].value;
     var b = document.forms["feedback"]["email"].value;
     var c = document.forms["feedback"]["message"].value;
     var y = document.querySelector('.sendbtn');
-    if (a && b && c !== ''){
-      y.classList.remove('disabled');
-    }else{
-      y.classList.add('disabled');
+    if (a && b && c !== '') {
+        y.classList.remove('disabled');
+    } else {
+        y.classList.add('disabled');
     }
 }
