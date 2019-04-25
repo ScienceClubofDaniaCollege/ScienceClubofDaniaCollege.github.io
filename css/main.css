@@ -237,7 +237,6 @@ body{
     padding: 20px;
 }
 .loginbtn,.fa-sign-in-alt{
-    z-index: 999;
     position: absolute;
     right: 20px;
     top:5px;
