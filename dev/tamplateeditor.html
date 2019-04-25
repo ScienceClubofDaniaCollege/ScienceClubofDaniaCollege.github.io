@@ -92,30 +92,28 @@ const footerhtml = `
                 <h5 class="text-uppercase font-weight-bold">Send a message</h5>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px;">
 
-                <form name="feedback" style="position: relative" id="feedback-form">
+                <form name="feedback" style="positon: relative" id="feedback-form">
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Name:</label>
                 <div class="col-sm-9">
-                <input name="name" type="text" class="form-control" placeholder="Your name" required>
+                <input  onkeyup="validation()"  name="name" type="text" class="form-control" placeholder="Your name" required>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Email:</label>
                 <div class="col-sm-9">
-                <input name="email" type="email" class="form-control" placeholder="email@example.com" required>
+                <input  onkeyup="validation()"  name="email" type="email" class="form-control" placeholder="email@example.com" required>
                 </div>
                 </div>
                 <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Message:</label>
                 <div class="col-sm-9">
-                <textarea name="message" class="form-control" rows="1.5" required></textarea>
+                <textarea  onkeyup="validation()"  name="message" class="form-control" rows="1.5" required></textarea>
                 </div>
                 </div>
-                <button class="sendbtn bg-primary" type="button" onclick="handleFeedbackForm()" style="transition: .5s;">Send</button>
-
-                <script>
-
-                </script>
+                <button class="sendbtn disabled bg-primary" type="button" onclick="handleFeedbackForm()" style="transition: .5s;">Send</button>
+                
+                <br><br><br>
                 </form>
 
             </div>
@@ -124,8 +122,8 @@ const footerhtml = `
 
 
     </div>
-    <div class="footer-copyright text-center py-3">Developed by:
-        <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="http://zahin.cf/">Md Zahin Afsar</a>
+    <div class="footer-copyright text-center py-3">Developed by:<br>
+        <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="http://mdzahin.me/">Md Zahin Afsar</a>
     </div>
 
 
@@ -136,7 +134,7 @@ footContainer.innerHTML = footerhtml;
 
 const feedbackForm = document.getElementById("feedback-form");
 const sndBtn = document.querySelector('.sendbtn');
-async function  handleFeedbackForm() {
+async function handleFeedbackForm() {
     sndBtn.innerHTML = '<div class="loader-spinner" style="display: inline-block"></div>';
     sndBtn.classList.remove('bg-primary')
     sndBtn.classList.add('btn-warning')
@@ -146,13 +144,13 @@ async function  handleFeedbackForm() {
     let name = formData.get('name');
     let email = formData.get('email');
     let message = formData.get('message');
-    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`,);
+    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`);
 
-    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, {mode: 'no-cors'})
-        .then(function(response) {
+    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, { mode: 'no-cors' })
+        .then(function (response) {
             return response;
         })
-        .then(function(text) {
+        .then(function (text) {
             console.log(text);
         });
     console.log('test');
@@ -160,13 +158,26 @@ async function  handleFeedbackForm() {
     sndBtn.innerHTML = '<i class="far fa-check-circle"></i>'
     sndBtn.classList.remove('btn-warning')
     sndBtn.classList.add('btn-success')
+    sndBtn.classList.add('disabled')
 
-setTimeout(()=>{
-    feedbackForm.reset();
-    sndBtn.innerHTML = 'Send';sndBtn.removeAttribute('disabled');
-    sndBtn.classList.remove('btn-success')
-    sndBtn.classList.add('bg-primary')
-}, 1200)
+    setTimeout(() => {
+        feedbackForm.reset();
+        sndBtn.innerHTML = 'Send'; sndBtn.removeAttribute('disabled');
+        sndBtn.classList.remove('btn-success')
+        sndBtn.classList.add('bg-primary')
+    }, 1200)
 
 
+}
+
+function validation() {
+    var a = document.forms["feedback"]["name"].value;
+    var b = document.forms["feedback"]["email"].value;
+    var c = document.forms["feedback"]["message"].value;
+    var y = document.querySelector('.sendbtn');
+    if (a && b && c !== '') {
+        y.classList.remove('disabled');
+    } else {
+        y.classList.add('disabled');
+    }
 }

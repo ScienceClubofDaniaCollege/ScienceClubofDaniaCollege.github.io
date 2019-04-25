@@ -137,6 +137,7 @@
     font-weight: bold;
 }
 .navbar{
+    z-index: -1;
     position: fixed;
     width: 100%;
     transition: .5s;
@@ -155,7 +156,7 @@
 .footup{
    background-color: #6351ce;
 }
-.page-footer{
+.footerbody{
     background-color: #000000c4;
     color:#d5d5d5;
 }
@@ -235,7 +236,27 @@ body{
 .mzhn {
     padding: 20px;
 }
-
+.loginbtn,.fa-sign-in-alt{
+    z-index: 999;
+    position: absolute;
+    right: 20px;
+    top:5px;
+    font-size: 30px;
+    color: black;
+}
+.fa-sign-in-alt:hover{
+  animation-name: login;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+@keyframes login {
+  from {
+    right: 25px;
+  }
+  to {
+    right: 15px;
+  }
+}
 .icon {
     position: relative;
     align-items: center;

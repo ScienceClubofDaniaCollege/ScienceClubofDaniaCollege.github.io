@@ -1,6 +1,9 @@
 // Start of NHA's JavaScript
 function genNav(p0, p1) {
   return `
+  <div class="loginbtn">
+        <a href="${p1}member-area.html" id="member-area"><i class="fas fa-sign-in-alt"></i></a>
+  </div>
 <nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +28,6 @@ function genNav(p0, p1) {
         </li>
         <li class="nav-item">
         <a class="nav-link" href="${p1}memberlist.html" id="member-list">Members List</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="${p1}member-area.html" id="member-area">Member Area</a>
         </li>
         </ul>
         </div>

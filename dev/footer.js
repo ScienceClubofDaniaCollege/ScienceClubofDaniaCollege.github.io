@@ -1,7 +1,7 @@
 const footerhtml = `
 <br><br><br>
 
-<footer class="page-footer font-small">
+<footer class="page-footer footerbody font-small">
 
     <div class="footup">
         <div class="container">
