@@ -238,8 +238,8 @@ body{
 }
 .loginbtn,.fa-sign-in-alt{
     position: absolute;
-    right: 15px;
-    top:4px;
+    right: 10px;
+    top:3.5px;
     font-size: 30px;
     color: black;
 }
