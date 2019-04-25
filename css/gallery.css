@@ -39,6 +39,7 @@ iframe{
     left: 50%;
     transform: translateX(-50%);
     top: 9px;
+    font-size:20px;
 }
 .loginbtn{
     top:4px;
