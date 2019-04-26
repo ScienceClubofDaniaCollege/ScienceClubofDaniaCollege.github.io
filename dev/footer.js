@@ -1,6 +1,6 @@
 const footerhtml = `
 <br><br><br>
-
+<div  class="footerbody">
 <footer class="page-footer footerbody font-small">
 
     <div class="footup">
@@ -127,7 +127,8 @@ const footerhtml = `
     </div>
 
 
-</footer>`
+</footer>
+</div>`
 const footContainer = document.getElementById("footer");
 footContainer.innerHTML = footerhtml;
 

@@ -119,12 +119,20 @@
 
 /* Start of Zahin's CSS */  
 #about img{
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+#aboutnav img{
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
     width: 200px;
     height: 200px;
-}  
+}
 .navbar-toggler{
     background-color: white;
 }
@@ -157,7 +165,7 @@
    background-color: #6351ce;
 }
 .footerbody{
-    background-color: #000000c4;
+    background-color: #00000080;
     color:#d5d5d5;
 }
 .sendbtn{
@@ -250,10 +258,10 @@ body{
 }
 @keyframes login {
   from {
-    right: 25px;
+    right: 10px;
   }
   to {
-    right: 15px;
+    right: 2px;
   }
 }
 .icon {
@@ -298,7 +306,7 @@ td{
 #sct{
     transition: .5s;
     border: 2px solid white;
-    padding:5px;
+    padding:10px;
     border-radius: 0px 10px 10px 0px;
     top:250px;
     z-index: 999;
