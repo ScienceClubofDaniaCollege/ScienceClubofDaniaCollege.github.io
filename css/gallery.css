@@ -4,14 +4,15 @@
 iframe{
     z-index: -999;
     top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 65px;
     position: fixed;
     height: 100%;
     width: 100%;
     border: none;
 }
 .filterbtn{
-    Width:70px; 
+    height: 40px;
+    Width:120px;
     position: absolute;
     right: 100px;
     top: 14px;
@@ -19,6 +20,7 @@ iframe{
     border-radius: 5px;
 }
 .filterbtn a{
+    font-size: 17px;
     color: white;
 }
 .card-body{
