@@ -237,7 +237,6 @@ body{
     transform: translateX(-50%);
     width: 90%;
     margin-top: 130px;
-    ;
     box-shadow: none;
 }
 
@@ -247,7 +246,7 @@ body{
 .loginbtn,.fa-sign-in-alt{
     position: absolute;
     right: 10px;
-    top:3.5px;
+    top:6px;
     font-size: 30px;
     color: black;
 }
@@ -346,4 +345,7 @@ td{
         background-color: #007bff;
         box-shadow: 5px 9px 18px 0px rgba(32, 33, 36, 0.28);
     }
+    .loginbtn,.fa-sign-in-alt{
+    top:3.5px;
+}
 }

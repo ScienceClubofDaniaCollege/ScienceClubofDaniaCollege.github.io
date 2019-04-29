@@ -1,5 +1,5 @@
-.container{
-    padding-left: 0;
+#gallery{
+    margin-right:25px;
 }
 iframe{
     z-index: -999;

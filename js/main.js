@@ -95,7 +95,7 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   var x = document.querySelector('.navbar')
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     x.classList.remove('before');
     x.classList.add('after');
     x.classList.add('box-shadow');
