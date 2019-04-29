@@ -122,8 +122,13 @@ const footerhtml = `
 
 
     </div>
-    <div class="footer-copyright text-center py-3">Developed by:<br>
-        <a href="https://nhas.me/">Nurul Huda (Apon) & </a> <a href="http://mdzahin.me/">Md Zahin Afsar</a>
+
+
+    <div class="footer-copyright text-center">
+    <h6 class=" m-2 badge badge-light">Developed by: 
+        <a class="px-1" href="https://nhas.me/">Nurul Huda</a> & <a  class="px-1" href="http://mdzahin.me/">Zahin Afsar</a>
+    </h6>
+        <h6 class="m- d-inline   badge badge-light" id="version">V0.7</h6>
     </div>
 
 
@@ -132,6 +137,15 @@ const footerhtml = `
 const footContainer = document.getElementById("footer");
 footContainer.innerHTML = footerhtml;
 
+const notifier = () => {
+    let pVersion = localStorage.getItem('dsc_web_version');
+    let cVersion = document.getElementById('version').innerText;
+    if (pVersion != cVersion) {
+        localStorage.setItem('dsc_web_version', cVersion);
+        alert('Website has been updated!!!');
+    }
+}
+window.addEventListener("load", notifier)
 
 const feedbackForm = document.getElementById("feedback-form");
 const sndBtn = document.querySelector('.sendbtn');
