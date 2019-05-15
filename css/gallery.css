@@ -1,52 +1,54 @@
 #gallery{
-    margin-right:25px;
+    position: relative;
+    z-index: -99999;
 }
-iframe{
-    z-index: -999;
-    top: 75px;
-    padding-bottom: 65px;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    border: none;
+.card-img-top{
+    width: 250px;
+    height: 200px;
+}
+table{
+    z-index: -99;
+    position: relative;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color: black;
 }
 .filterbtn{
     height: 40px;
     Width:120px;
-    position: absolute;
-    right: 100px;
-    top: 14px;
-    color: black; 
+    position: relative;
+    color: white; 
     border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    font-size:20px;
+}
+a:not([href]):not([tabindex]){
+    color:white;
 }
 .filterbtn a{
     font-size: 17px;
     color: white;
 }
-.card-body{
-    background-color: #63809f;
-    color: white;
-    text-align: center;
-
-}
 .loginbtn{
     position: fixed;
     top:8px;
 }
-#navbar{
-    z-index: -10;
-}
 @media screen and (max-width: 991px) {
-.filterbtn{
-    left: 50%;
-    transform: translateX(-50%);
-    top: 9px;
-    font-size:20px;
-}
 .loginbtn{
     top:4px;
 }
-iframe{
-    top: 60px;
+}
+@media screen and (max-width: 760px) {
+.loginbtn{
+    top:4px;
 }
 }
