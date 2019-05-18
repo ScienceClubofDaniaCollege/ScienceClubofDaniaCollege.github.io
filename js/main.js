@@ -59,6 +59,28 @@ for (let i = 0; i < img.length; i++) {
 
 
 
+//adding avator of logged in member
+
+var mem;
+let lc = document.getElementsByClassName('loginbtn');
+fetch('http://localhost:3000/who', { credentials: 'include' })
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (myJson) {
+        console.log(myJson);
+        mem = myJson;
+        if (mem.fname) {
+            lc[0].innerHTML =`<div>
+                <a href="/html/member-area.html">
+                    <img src="${mem.photo[0]}"  style="width: 45px; height:45px; border-radius:50%;">
+                </a>
+                </div>`;
+        }
+    });
+
+
+
 // adding head content
 const head = document.getElementsByTagName('head');
 const headContent = `
