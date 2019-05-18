@@ -1,0 +1,33 @@
+{
+  "name": "dsc-frontend",
+  "version": "1.0.0",
+  "description": "* ## This is an unofficial website for Dania Science Club.\r * ### If you are a student of Dania College then you can help us to design this website.\r * ### We will be adding various educational content to this website.\r * ### We may present this website in some science fair.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniaScienceClub/Dania_Science_Club-s-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniaScienceClub/Dania_Science_Club-s-Web/issues"
+  },
+  "homepage": "https://github.com/DaniaScienceClub/Dania_Science_Club-s-Web#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
