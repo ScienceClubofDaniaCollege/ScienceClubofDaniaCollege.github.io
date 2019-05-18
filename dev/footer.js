@@ -128,7 +128,7 @@ const footerhtml = `
     <h6 class=" m-2 badge badge-light">Developed by: 
         <a class="px-1" href="https://nhas.me/">Nurul Huda</a> & <a  class="px-1" href="http://mdzahin.me/">Zahin Afsar</a>
     </h6>
-        <h6 class="m- d-inline   badge badge-light" id="version">V0.7</h6>
+        <h6 class="m- d-inline   badge badge-light" id="version">V0.9</h6>
     </div>
 
 
