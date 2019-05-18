@@ -70,10 +70,11 @@ fetch('https://dscapi.herokuapp.com/who', { credentials: 'include' })
     .then(function (myJson) {
         console.log(myJson);
         mem = myJson;
+        let smallImage = [mem.photo[0].slice(0, -4), 's', mem.photo[0].slice(-4)].join('');
         if (mem.fname) {
             lc[0].innerHTML =`<div>
                 <a href="/html/member-area.html">
-                    <img src="${mem.photo[0]}"  style="width: 45px; height:45px; border-radius:50%;">
+                    <img src="${smallImage}"  style="width: 45px; height:45px; border-radius:50%;">
                 </a>
                 </div>`;
         }
