@@ -63,7 +63,7 @@ for (let i = 0; i < img.length; i++) {
 
 var mem;
 let lc = document.getElementsByClassName('loginbtn');
-fetch('http://localhost:3000/who', { credentials: 'include' })
+fetch('https://dscapi.herokuapp.com/who', { credentials: 'include' })
     .then(function (response) {
         return response.json();
     })
