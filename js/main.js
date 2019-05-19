@@ -1,3 +1,11 @@
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('../sw.js')
+      .then(reg => console.log('SW Registered'))
+      .catch(err => console.log('SW Error'));
+  });
+}
 // Start of NHA's JavaScript
 function genNav(p0, p1) {
   return `
@@ -78,7 +86,8 @@ fetch('https://dscapi.herokuapp.com/who', { credentials: 'include' })
                 </a>
                 </div>`;
         }
-    });
+    }).catch(() => console.log('Not Logged In')
+    );
 
 
 
