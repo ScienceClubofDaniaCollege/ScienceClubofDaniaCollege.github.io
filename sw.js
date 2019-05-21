@@ -1,4 +1,4 @@
-const cacheVersion = 'v1';
+const cacheVersion = 'V3';
 
 const cacheAssests = [
     '/',
@@ -10,12 +10,10 @@ const cacheAssests = [
     '/img/icon/gallery.svg',
     '/img/icon/member.svg',
     '/img/icon/subjects.svg',
-    '/html/',
     '/js/main.js',
-    '/js/footer.js',
+    '/dev/footer.js',
     '/js/loader.js',
-    '/css/main.css',
-    '/img/'
+    '/css/main.css'
 ];
 
 
@@ -41,8 +39,7 @@ self.addEventListener('fetch', e => {
     e.respondWith(caches.match(e.request).then(res => {
         return res ||
             fetch(e.request)
-                // .then(console.log('Fetched form server'))
-                // .catch(console.log('error fetching..'))
-        })
+    })
+        
     );
 });
