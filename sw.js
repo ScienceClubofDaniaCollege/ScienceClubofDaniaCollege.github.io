@@ -1,10 +1,20 @@
 const cacheVersion = 'v1';
 
 const cacheAssests = [
+    '/',
     '/index.html',
+    '/img/logo.svg',
+    '/img/icon/login.svg',
+    '/img/icon/about.svg',
+    '/img/icon/events.svg',
+    '/img/icon/gallery.svg',
+    '/img/icon/member.svg',
+    '/img/icon/subjects.svg',
     '/html/',
-    '/js/',
-    '/css',
+    '/js/main.js',
+    '/js/footer.js',
+    '/js/loader.js',
+    '/css/main.css',
     '/img/'
 ];
 
@@ -28,9 +38,11 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-    console.log('Fetched from server')
-    e.respondWith(
-        fetch(e.request)
-            .catch(() => { caches.match(e.request); console.log('Fetched from caches') })
+    e.respondWith(caches.match(e.request).then(res => {
+        return res ||
+            fetch(e.request)
+                // .then(console.log('Fetched form server'))
+                // .catch(console.log('error fetching..'))
+        })
     );
 });

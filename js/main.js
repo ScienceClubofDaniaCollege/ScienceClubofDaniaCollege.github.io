@@ -7,6 +7,10 @@ if ('serviceWorker' in navigator) {
   });
 }
 // Start of NHA's JavaScript
+// if (navBar == 'undefined') {var navBar;}
+// if (navBarI == 'undefined') {var navBarI};
+
+
 function genNav(p0, p1) {
   return `
   <div class="loginbtn">
@@ -45,12 +49,12 @@ function genNav(p0, p1) {
         </nav>
         `
 }
+// if (!navBar && !navBarI){console.log('No navbar')}
+var navBar = genNav('../', '');
+var navBarI = genNav('', 'html/');
 
-const navBar = genNav('../', '');
-const navBarI = genNav('', 'html/');
-
-const navContainer = document.querySelector("#navbar");
-const navContainerI = document.querySelector("#navbari");
+var navContainer = document.querySelector("#navbar");
+var navContainerI = document.querySelector("#navbari");
 
 if (navContainer == null) {
   navContainerI.innerHTML = navBarI;
@@ -71,7 +75,7 @@ for (let i = 0; i < img.length; i++) {
 
 var mem;
 let lc = document.getElementsByClassName('loginbtn');
-fetch('https://dscapi.herokuapp.com/who', { credentials: 'include' })
+fetch('https://dscapi.herokuapp.com/who', { credentials: 'include'})
     .then(function (response) {
         return response.json();
     })
