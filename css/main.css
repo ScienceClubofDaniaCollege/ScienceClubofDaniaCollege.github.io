@@ -211,8 +211,7 @@ img.dania{
     height: 380px;
     position: absolute;
     z-index: -99;
-    background: linear-gradient(#008eff,white,#5c00ff);
-    opacity: .7;
+    background: linear-gradient(#008cfca8,white,#00c9ffab);
 }
 #headerbox {
     position: relative;
