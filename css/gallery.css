@@ -1,3 +1,11 @@
+#showbtn {
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    width: 90%;
+    color:white;
+}
 #gallery{
     position: relative;
     z-index: -99999;
