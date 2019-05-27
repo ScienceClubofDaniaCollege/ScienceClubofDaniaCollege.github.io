@@ -1,4 +1,12 @@
+.info{
+    display: none;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
 #showbtn {
+    position: relative;
     padding: 10px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -15,12 +23,14 @@
     height: 200px;
 }
 table{
+    margin: 10px;
     z-index: -99;
     position: relative;
-    margin-bottom: 10px;
-    width: 80%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+}
+.rowown {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .title{
     font-weight: bold;
@@ -29,6 +39,7 @@ table{
     color: black;
 }
 .filterbtn{
+    z-index: 100;
     height: 40px;
     Width:120px;
     position: relative;
@@ -58,5 +69,10 @@ a:not([href]):not([tabindex]){
 @media screen and (max-width: 760px) {
 .loginbtn{
     top:4px;
+}
+}
+@media screen and (max-width: 600px) {
+.rowown{
+    margin-left: 10px;
 }
 }
