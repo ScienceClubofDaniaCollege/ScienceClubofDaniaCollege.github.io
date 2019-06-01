@@ -33,6 +33,26 @@
     <!-- Own CSS -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/about.css" />
+    <style>
+      #loader {
+        margin: 0 auto;
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
     <!-- ICON -->
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
     <title>Dania Science Club</title>
@@ -45,7 +65,10 @@
     <!-- end of navbar -->
 
     <!-- start of gallery -->
-    <div id="gallery-container" class="text-center"></div>
+    <div id="gallery-container" class="text-center">
+      <!-- Preloader -->
+      <div id="loader" class="text-center"></div>
+    </div>
     <!-- end of gallery -->
 
     <!-- end of page contents -->
@@ -202,28 +225,32 @@
           description: "This is image 1",
           src: "../img/gallery/4.jpeg",
           thumb: "../img/gallery/4.jpeg"
-        },
+        }
       ];
-      
-      const createGallery = async () => {
 
-          async function getGalleryImages () {
-              const res = await fetch('https://dscapi.herokuapp.com/gallery');
-              return res.json();
-            }
-    
-          let galleryImages = await getGalleryImages ();
-          console.log(galleryImages);
-          
-          for (let i = 0; i < galleryImages.length; i++) {
-            galleryContainer.innerHTML += `
-                <a href=${galleryImages[i].src} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
-                    <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].thumb}>
+      const createGallery = async () => {
+        async function getGalleryImages() {
+          const res = await fetch("https://dscapi.herokuapp.com/gallery");
+          return res.json();
+        }
+
+        let galleryImages = await getGalleryImages();
+        console.log(galleryImages);
+
+        for (let i = 0; i < galleryImages.length; i++) {
+          galleryContainer.innerHTML += `
+                <a href=${galleryImages[i].src} data-sub-html="<h4>${
+            galleryImages[i].title
+          }</h4><p>${galleryImages[i].description}</p>">
+                    <img class="mb-1 rounded border border-success" height="100px" src=${
+                      galleryImages[i].thumb
+                    }>
                 </a>
               `;
-          }
-          lightGallery(galleryContainer, { thumbnail: true });
-      }
+        }
+        lightGallery(galleryContainer, { thumbnail: true });
+        document.querySelector('#loader').style.display = 'none';
+      };
       createGallery();
     </script>
   </body>
