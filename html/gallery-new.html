@@ -34,8 +34,10 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <style>
-      #loader {
+      .center {
         margin: 0 auto;
+      }
+      #loader {
         border: 16px solid #f3f3f3; /* Light grey */
         border-top: 16px solid #3498db; /* Blue */
         border-radius: 50%;
@@ -63,11 +65,22 @@
     <div id="navbar" class="sticky-top about"></div>
     <br /><br /><br /><br />
     <!-- end of navbar -->
+    <div class="text-center">
 
+      <select class="btn-primary btn" onchange="createGallery(this.value)">
+        <option value="">All</option>
+        <option value="dsc">Science Club</option>
+        <option value="college">College</option>
+        <option value="fair">Fair</option>
+        <option value="project">Science Club Project</option>
+        <option value="others">Others</option>
+      </select>
+      <br>
+      <br>
+    </div>
     <!-- start of gallery -->
     <div id="gallery-container" class="text-center">
       <!-- Preloader -->
-      <div id="loader" class="text-center"></div>
     </div>
     <!-- end of gallery -->
 
@@ -103,140 +116,29 @@
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
     <script>
-      const galleryContainer = document.querySelector("#gallery-container");
+      let galleryContainer = document.querySelector("#gallery-container");
 
-      const galleryImagesDemo = [
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/2.jpeg",
-          thumb: "../img/gallery/2.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 2",
-          description: "This is image 1",
-          src: "../img/gallery/3.jpeg",
-          thumb: "../img/gallery/3.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
-        },
-        {
-          title: "Image 1",
-          description: "This is image 1",
-          src: "../img/gallery/4.jpeg",
-          thumb: "../img/gallery/4.jpeg"
+      const createGallery = async (cat) => {
+        let url;
+        if (cat) {
+          url = "https://dscapi.herokuapp.com/gallery?cat=" + cat;
+        } else {
+          url = "https://dscapi.herokuapp.com/gallery?cat";
         }
-      ];
 
-      const createGallery = async () => {
+        galleryContainer.innerHTML = `<div id="loader" class="center"></div>`
+
+
         async function getGalleryImages() {
-          const res = await fetch("https://dscapi.herokuapp.com/gallery");
+          const res = await fetch(url);
           return res.json();
         }
-
         let galleryImages = await getGalleryImages();
         console.log(galleryImages);
-
+        if (galleryImages.length == 0) {
+          galleryContainer.innerHTML = '<h3> No images yeat</h3>'
+          return;
+        }
         for (let i = 0; i < galleryImages.length; i++) {
           galleryContainer.innerHTML += `
                 <a href=${galleryImages[i].src} data-sub-html="<h4>${

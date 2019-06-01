@@ -15,19 +15,12 @@ const footerhtml = `
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
 
 
-                    <a class="fb-ic" href="https://fb.me/d">
+                    <a class="fb-ic" href="https://www.facebook.com/DUCSCBD/">
                         <i class="fab fa-facebook-f white-text mr-4"> </i>
                     </a>
 
                     <a class="tw-ic">
                         <i class="fab fa-twitter white-text mr-4"> </i>
-                    </a>
-
-                    <a class="gplus-ic">
-                        <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                    </a>
-                    <a class="li-ic">
-                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
                     </a>
 
                     <a class="ins-ic">
