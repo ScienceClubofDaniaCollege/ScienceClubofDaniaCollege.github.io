@@ -96,7 +96,7 @@ fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
         if (mem.memberId) {
             lc.innerHTML =`<div>
                 <a href="/html/member-area.html">
-                    <img src="${smallImage}"  style="width: 45px; height:45px; border-radius:50%;">
+                    <img src="${smallImage}"  style="width: 45px; height:45px; border-radius:50%;float: right;margin: 5px;">
                 </a>
                 </div>`;
         }
