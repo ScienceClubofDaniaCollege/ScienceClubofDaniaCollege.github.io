@@ -115,6 +115,61 @@
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+    <!-- <script>
+      let galleryContainer = document.querySelector("#gallery-container");
+
+      const createGallery = async (cat) => {
+        let url;
+        if (cat) {
+          url = "https://dscapi.herokuapp.com/gallery?cat=" + cat;
+        } else {
+          url = "https://dscapi.herokuapp.com/gallery?cat";
+        }
+
+        // galleryContainer.innerHTML = `<div id="loader" class="center"></div>`
+
+
+        async function getGalleryImages() {
+          const res = await fetch(url);
+          return res.json();
+        }
+        let galleryImages = await getGalleryImages();
+        console.log(galleryImages);
+        if (galleryImages.length == 0) {
+          galleryContainer.innerHTML = '<h3> No images yeat</h3>'
+          return;
+        }
+        let dynamicEl = [];
+        function created() {
+          for (let i = 0; i < galleryImages.length; i++) {
+          dynamicEl.push(
+            {
+            "src": galleryImages[i].src,
+            'thumb': galleryImages[i].thumb,
+            'subHtml': `<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>`
+        }
+          )
+          
+        }}
+
+        // for (let i = 0; i < galleryImages.length; i++) {
+
+        //   galleryContainer.innerHTML += `
+        //         <a href=${galleryImages[i].src} data-sub-html="<h4>${
+        //     galleryImages[i].title
+        //   }</h4><p>${galleryImages[i].description}</p>">
+        //             <img class="mb-1 rounded border border-success" height="100px" src=${
+        //               galleryImages[i].thumb
+        //             }>
+        //         </a>
+        //       `;
+        // }
+        // document.querySelector('#loader').style.display = 'none';
+        created();
+        lightGallery(galleryContainer, { thumbnail: true, dynamic: true, dynamicEl: dynamicEl});
+      };
+      createGallery();
+    </script> -->
     <script>
       let galleryContainer = document.querySelector("#gallery-container");
 
@@ -131,6 +186,7 @@
 
         async function getGalleryImages() {
           const res = await fetch(url);
+          galleryContainer.innerHTML='';
           return res.json();
         }
         let galleryImages = await getGalleryImages();
@@ -140,18 +196,15 @@
           return;
         }
         for (let i = 0; i < galleryImages.length; i++) {
+
           galleryContainer.innerHTML += `
-                <a href=${galleryImages[i].src} data-sub-html="<h4>${
-            galleryImages[i].title
-          }</h4><p>${galleryImages[i].description}</p>">
-                    <img class="mb-1 rounded border border-success" height="100px" src=${
-                      galleryImages[i].thumb
-                    }>
+                <a href=${galleryImages[i].src} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
+                  <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].thumb}>
                 </a>
               `;
         }
-        lightGallery(galleryContainer, { thumbnail: true });
-        document.querySelector('#loader').style.display = 'none';
+
+        lightGallery(galleryContainer, { thumbnail: true});
       };
       createGallery();
     </script>
