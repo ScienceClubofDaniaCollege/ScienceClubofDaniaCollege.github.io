@@ -15,7 +15,7 @@ const footerhtml = `
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
 
 
-                    <a class="fb-ic">
+                    <a class="fb-ic" href="https://fb.me/d">
                         <i class="fab fa-facebook-f white-text mr-4"> </i>
                     </a>
 
@@ -142,7 +142,20 @@ const notifier = () => {
     let cVersion = document.getElementById('version').innerText;
     if (pVersion != cVersion) {
         localStorage.setItem('dsc_web_version', cVersion);
-        alert('Website has been updated!!!');
+        // alert('Updated')
+        document.querySelector('#aboutnav').innerHTML += `
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false"  data-delay="10000">
+        <div class="toast-header">
+          <strong class="mr-auto">New Updtae!</strong>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Website has been updated since you last visited!
+        </div>
+      </div>
+        `
     }
 }
 window.addEventListener("load", notifier)

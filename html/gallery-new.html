@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font aowsum -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+      integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+      crossorigin="anonymous"
+    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- gallery -->
+    <link
+      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sachinchoolur.github.io/lightgallery.js/static/css/justifiedGallery.min.css"
+    />
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <title>Dania Science Club</title>
+  </head>
+
+  <body>
+    <!-- start of navbar -->
+    <div id="navbar" class="sticky-top about"></div>
+    <br /><br /><br /><br />
+    <!-- end of navbar -->
+
+    <!-- start of gallery -->
+    <div id="gallery-container" class="text-center"></div>
+    <!-- end of gallery -->
+
+    <!-- end of page contents -->
+    <div id="footer"></div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../dev/footer.js"></script>
+    <!-- gallery js -->
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-thumbnail.js/master/dist/lg-thumbnail.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+    <script>
+      const galleryContainer = document.querySelector("#gallery-container");
+
+      const galleryImagesDemo = [
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/2.jpeg",
+          thumb: "../img/gallery/2.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 2",
+          description: "This is image 1",
+          src: "../img/gallery/3.jpeg",
+          thumb: "../img/gallery/3.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+        {
+          title: "Image 1",
+          description: "This is image 1",
+          src: "../img/gallery/4.jpeg",
+          thumb: "../img/gallery/4.jpeg"
+        },
+      ];
+      
+      const createGallery = async () => {
+
+          async function getGalleryImages () {
+              const res = await fetch('https://dscapi.herokuapp.com/gallery');
+              return res.json();
+            }
+    
+          let galleryImages = await getGalleryImages ();
+          for (let i = 0; i < galleryImages.length; i++) {
+            galleryContainer.innerHTML += `
+                <a href=${galleryImages[i].thumb} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
+                    <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].src}>
+                </a>
+              `;
+          }
+          lightGallery(galleryContainer, { thumbnail: true });
+      }
+      createGallery();
+    </script>
+  </body>
+</html>
