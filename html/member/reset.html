@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../../js/loader.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <title>Password Reset</title>
+</head>
+<body style="background: white">
+        <!-- Preloader -->
+        <div class="loader">
+            <img src="../../img/preloader.svg" alt="Loading...">
+        </div>
+        <!-- Notice -->
+        <div id="notice">
+    
+        </div>
+        <!-- start of navbar -->
+        <div id="navbari" class="sticky-top home">
+            <div class="alert alert-warning" role="alert" style="z-index:1;">
+                Your browser does not support latest version of JavaScript! Please update.
+            </div>
+        </div><br><br> <br>
+        <!-- end of navbar -->
+    <div class="container">
+
+        <form action="https://dscapi.herokuapp.com/member/reset/getlink">
+            <input type="text" name="roll" placeholder="Enter Your Roll">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- Main JavaScript -->
+    <script src="../../js/main.js"></script>
+    <!-- <script src="dev/footer.js"></script> -->
+</body>
+</html>

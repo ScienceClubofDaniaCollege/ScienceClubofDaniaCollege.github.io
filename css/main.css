@@ -142,10 +142,16 @@
 .navbar-toggler-icon{
     background-color: white;
 }
-.navbar-nav .nav-link {
+.show .navbar-nav .nav-link {
     margin: 7px;
+}
+.collapsing .navbar-nav .nav-link {
+    margin: 7px;
+}
+.navbar-nav .nav-link {
+    /* margin: 7px; */
     color: black;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
 }
 .navbar{
@@ -369,4 +375,5 @@ td{
     nav a{
     background-color: #75b7ffa8;
     border-radius: 0px 15px 12px 10px;
+}
 }

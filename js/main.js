@@ -13,8 +13,17 @@ if ('serviceWorker' in navigator) {
 
 function genNav(p0, p1) {
   return `
-  <div class="loginbtn">
-        <a href="${p1}member-area.html" id="member-area"><i class="fas fa-sign-in-alt"></i></a>
+  <div id="loginbtn" style="
+      background: honeydew;
+      border: 2px solid dodgerblue;
+      padding: 5px;
+      border-radius: 5px;
+      float: right;
+      margin: 9px;
+      font-weight: bold;">
+      <a  class="d-inline" href="${p1}register.html" id="register">Register</a>
+        <span class="d-inline"> or </span>
+      <a  class="d-inline" href="${p1}member-area.html" id="member-area">Login</a>
   </div>
 <nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
 
@@ -74,7 +83,7 @@ for (let i = 0; i < img.length; i++) {
 //adding avator of logged in member
 
 var mem;
-let lc = document.getElementsByClassName('loginbtn');
+let lc = document.getElementById('loginbtn');
 fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
     .then(function (response) {
         return response.json();
