@@ -75,12 +75,12 @@ for (let i = 0; i < img.length; i++) {
 
 var mem;
 let lc = document.getElementsByClassName('loginbtn');
-fetch('https://dscapi.herokuapp.com/who', { credentials: 'include'})
+fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
     .then(function (response) {
         return response.json();
     })
     .then(function (myJson) {
-        console.log(myJson);
+        // console.log(myJson);
         mem = myJson;
         let smallImage = [mem.photo[0].slice(0, -4), 's', mem.photo[0].slice(-4)].join('');
         if (mem.fname) {
