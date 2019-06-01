@@ -213,10 +213,12 @@
             }
     
           let galleryImages = await getGalleryImages ();
+          console.log(galleryImages);
+          
           for (let i = 0; i < galleryImages.length; i++) {
             galleryContainer.innerHTML += `
-                <a href=${galleryImages[i].thumb} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
-                    <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].src}>
+                <a href=${galleryImages[i].src} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
+                    <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].thumb}>
                 </a>
               `;
           }
