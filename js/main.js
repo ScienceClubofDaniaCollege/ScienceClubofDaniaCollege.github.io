@@ -13,7 +13,8 @@ if ('serviceWorker' in navigator) {
 
 function genNav(p0, p1) {
   return `
-  <div id="loginbtn" style="
+  <div id="loginbtn">
+  <div style="
       background: honeydew;
       border: 2px solid dodgerblue;
       padding: 5px;
@@ -24,7 +25,7 @@ function genNav(p0, p1) {
       <a  class="d-inline" href="${p1}register.html" id="register">Register</a>
         <span class="d-inline"> or </span>
       <a  class="d-inline" href="${p1}member-area.html" id="member-area">Login</a>
-  </div>
+  </div></div>
 <nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,7 +94,7 @@ fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
         mem = myJson;
         let smallImage = [mem.photo[0].slice(0, -4), 's', mem.photo[0].slice(-4)].join('');
         if (mem.memberId) {
-            lc[0].innerHTML =`<div>
+            lc.innerHTML =`<div>
                 <a href="/html/member-area.html">
                     <img src="${smallImage}"  style="width: 45px; height:45px; border-radius:50%;">
                 </a>
