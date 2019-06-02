@@ -6,9 +6,6 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.log('SW Error'));
   });
 }
-// Start of NHA's JavaScript
-// if (navBar == 'undefined') {var navBar;}
-// if (navBarI == 'undefined') {var navBarI};
 
 
 function genNav(p0, p1) {
@@ -22,11 +19,11 @@ function genNav(p0, p1) {
       float: right;
       margin: 9px;
       font-weight: bold;">
-      <a  class="d-inline" href="${p1}register.html" id="register">Register</a>
+      <a  class="d-inline" href="${p1}register.html">Register</a>
         <span class="d-inline"> or </span>
-      <a  class="d-inline" href="${p1}member-area.html" id="member-area">Login</a>
+      <a  class="d-inline" href="${p1}member-area.html">Login</a>
   </div></div>
-<nav class="navbar before navbar-expand-lg sticky-top" id="navbari">
+<nav class="navbar before navbar-expand-lg sticky-top">
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
