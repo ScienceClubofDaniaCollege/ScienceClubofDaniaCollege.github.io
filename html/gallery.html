@@ -1,212 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Font aowsum -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
-      integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
-      crossorigin="anonymous"
-    />
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=0"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-    <!-- gallery -->
-    <link
-      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://sachinchoolur.github.io/lightgallery.js/static/css/justifiedGallery.min.css"
-    />
-    <!-- Own CSS -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/about.css" />
-    <style>
-      .center {
-        margin: 0 auto;
-      }
-      #loader {
-        border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        animation: spin 2s linear infinite;
+
+<head>
+  <!-- Font aowsum -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <!-- gallery -->
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://sachinchoolur.github.io/lightgallery.js/static/css/justifiedGallery.min.css" />
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- <link rel="stylesheet" href="../css/about.css" /> -->
+  <style>
+    .center {
+      margin: 0 auto;
+    }
+
+    #loader {
+      border: 16px solid #f3f3f3;
+      /* Light grey */
+      border-top: 16px solid #3498db;
+      /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
       }
 
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+      100% {
+        transform: rotate(360deg);
       }
-    </style>
-    <!-- ICON -->
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
-    <title>Dania Science Club</title>
-  </head>
+    }
+  </style>
+  <!-- ICON -->
+  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+  <title>Dania Science Club</title>
+</head>
 
-  <body>
-    <!-- start of navbar -->
-    <div id="navbar" class="sticky-top about"></div>
-    <br /><br /><br /><br />
-    <!-- end of navbar -->
-    <div class="text-center">
+<body>
+  <!-- start of navbar -->
+  <div id="navbar" class="sticky-top gallery"></div>
+  <br /><br /><br /><br />
+  <!-- end of navbar -->
+  <div class="text-center">
 
-      <select class="btn-primary btn" onchange="createGallery(this.value)">
-        <option value="">All</option>
-        <option value="dsc">Science Club</option>
-        <option value="college">College</option>
-        <option value="fair">Fair</option>
-        <option value="project">Science Club Project</option>
-        <option value="others">Others</option>
-      </select>
-      <br>
-      <br>
-    </div>
-    <!-- start of gallery -->
-    <div id="gallery-container" class="text-center">
-      <!-- Preloader -->
-    </div>
-    <!-- end of gallery -->
+    <select class="btn-primary btn" onchange="createGallery(this.value)">
+      <option value="">All</option>
+      <option value="dsc">Science Club</option>
+      <option value="college">College</option>
+      <option value="fair">Fair</option>
+      <option value="project">Science Club Project</option>
+      <option value="others">Others</option>
+    </select>
+    <br>
+    <br>
+  </div>
+  <!-- start of gallery -->
+  <div id="gallery-container" class="text-center">
+    <!-- Preloader -->
+  </div>
+  <!-- end of gallery -->
 
-    <!-- end of page contents -->
-    <div id="footer"></div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Main JavaScript -->
-    <script src="../js/main.js"></script>
-    <script src="../dev/footer.js"></script>
-    <!-- gallery js -->
-    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-thumbnail.js/master/dist/lg-thumbnail.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
-    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
-    <!-- <script>
-      let galleryContainer = document.querySelector("#gallery-container");
+  <!-- end of page contents -->
+  <div id="footer"></div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <!-- Main JavaScript -->
+  <script src="../js/main.js"></script>
+  <script src="../dev/footer.js"></script>
+  <!-- gallery js -->
+  <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-thumbnail.js/master/dist/lg-thumbnail.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+  <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+  <script src="../js/gallery/gallery.js"></script>
+</body>
 
-      const createGallery = async (cat) => {
-        let url;
-        if (cat) {
-          url = "https://dscapi.herokuapp.com/gallery?cat=" + cat;
-        } else {
-          url = "https://dscapi.herokuapp.com/gallery?cat";
-        }
-
-        // galleryContainer.innerHTML = `<div id="loader" class="center"></div>`
-
-
-        async function getGalleryImages() {
-          const res = await fetch(url);
-          return res.json();
-        }
-        let galleryImages = await getGalleryImages();
-        console.log(galleryImages);
-        if (galleryImages.length == 0) {
-          galleryContainer.innerHTML = '<h3> No images yeat</h3>'
-          return;
-        }
-        let dynamicEl = [];
-        function created() {
-          for (let i = 0; i < galleryImages.length; i++) {
-          dynamicEl.push(
-            {
-            "src": galleryImages[i].src,
-            'thumb': galleryImages[i].thumb,
-            'subHtml': `<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>`
-        }
-          )
-          
-        }}
-
-        // for (let i = 0; i < galleryImages.length; i++) {
-
-        //   galleryContainer.innerHTML += `
-        //         <a href=${galleryImages[i].src} data-sub-html="<h4>${
-        //     galleryImages[i].title
-        //   }</h4><p>${galleryImages[i].description}</p>">
-        //             <img class="mb-1 rounded border border-success" height="100px" src=${
-        //               galleryImages[i].thumb
-        //             }>
-        //         </a>
-        //       `;
-        // }
-        // document.querySelector('#loader').style.display = 'none';
-        created();
-        lightGallery(galleryContainer, { thumbnail: true, dynamic: true, dynamicEl: dynamicEl});
-      };
-      createGallery();
-    </script> -->
-    <script>
-      let galleryContainer = document.querySelector("#gallery-container");
-
-      const createGallery = async (cat) => {
-        let url;
-        if (cat) {
-          url = "https://dscapi.herokuapp.com/gallery?cat=" + cat;
-        } else {
-          url = "https://dscapi.herokuapp.com/gallery?cat";
-        }
-
-        galleryContainer.innerHTML = `<div id="loader" class="center"></div>`
-
-
-        async function getGalleryImages() {
-          const res = await fetch(url);
-          galleryContainer.innerHTML='';
-          return res.json();
-        }
-        let galleryImages = await getGalleryImages();
-        console.log(galleryImages);
-        if (galleryImages.length == 0) {
-          galleryContainer.innerHTML = '<h3> No images yet</h3>'
-          return;
-        }
-        for (let i = 0; i < galleryImages.length; i++) {
-
-          galleryContainer.innerHTML += `
-                <a href=${galleryImages[i].src} data-sub-html="<h4>${galleryImages[i].title}</h4><p>${galleryImages[i].description}</p>">
-                  <img class="mb-1 rounded border border-success" height="100px" src=${galleryImages[i].thumb}>
-                </a>
-              `;
-        }
-
-        lightGallery(galleryContainer, { thumbnail: true});
-      };
-      createGallery();
-    </script>
-  </body>
 </html>
