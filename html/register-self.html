@@ -31,9 +31,9 @@
         <!-- <p
             style="position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 122%;display: flex;justify-content: center;align-items: center;">
             Collecting Your Data...</p> -->
-    </div>
-      <!-- start of navbar -->
-  <div id="navbar" class="sticky-top register"></div>
+        </div>
+        <!-- start of navbar -->
+        <div id="navbar" class="sticky-top register"></div>
   <!-- end of navbar -->
     <div class="form" onclick="generateMemberId()">
         <form class="card" action="/register" method="POST" enctype="multipart/form-data" onsubmit="showLoader()"><img
@@ -99,6 +99,7 @@
                 <div class="col-7"><input id="memberId" type="text" name="memberId" readonly></div>
             </div><input id="submitButton" type="submit" value="Submit"><br>
             <p>Already registered?<a href="/html/login.html"> Login</a></p>
+            <p>Forgot password?</p><a href='https://daniascienceclub.cf/html/member/reset.html'>Reset now</a>
         </form>
         <hr>
         <!-- jQuery first, then Popper.js, then Bootstrap JS-->
@@ -118,6 +119,7 @@
                 loader.classList.remove('hidden');
             };</script>
     </div>
+    <script src="../js/main.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
