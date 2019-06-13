@@ -78,27 +78,7 @@ for (let i = 0; i < img.length; i++) {
 
 
 
-//adding avator of logged in member
 
-var mem;
-let lc = document.getElementById('loginbtn');
-fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (myJson) {
-        // console.log(myJson);
-        mem = myJson;
-        let smallImage = [mem.photo[0].slice(0, -4), 's', mem.photo[0].slice(-4)].join('');
-        if (mem.memberId) {
-            lc.innerHTML =`<div>
-                <a href="/html/member-area.html">
-                    <img src="${smallImage}"  style="width: 45px; height:45px; border-radius:50%;float: right;margin: 5px;">
-                </a>
-                </div>`;
-        }
-    }).catch(() => console.log('Not Logged In')
-    );
 
 
 

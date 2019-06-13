@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/form.css">
-    <title>gallery</title>
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/form.css"> -->
+    <title>Gallery-Add Image</title>
 </head>
-<body style="background: white">
-    <div class="container">
 
-        <form action="https://dscapi.herokuapp.com/gallery" method="post" enctype="multipart/form-data">
-            <input type="text" name="title" placeholder="title">
-            <input type="text" name="description" placeholder="description">
-            <select name="category">
-                    <option value="dsc">Science Club</option>
-                    <option value="college">College</option>
-                    <option value="project">Projects</option>
-                    <option value="fair">Fair</option>
-                    <option value="others">Others</option>
-            </select>
-            <input type="date" name="date" placeholder="date">
-            <input type="file" name="newImage" id="">
-            <input type="submit" value="submit">
-        </form>
+<body style="background: white">
+    <!-- start of navbar -->
+    <div id="navbar" class="sticky-top gallery"></div>
+    <br /><br /><br /><br />
+    <!-- end of navbar -->
+    <div class="container">
+        <div class="h3 bg-dark rounded text-white p-4 text-center">Add Gallery Image</div>
+        <div class="card p-5">
+
+            <form action="https://dscapi.herokuapp.com/gallery" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Image Title</label>
+                    <input class="form-control" type="text" name="title" placeholder="Image Title">
+                    <label for="exampleInputEmail1">Description</label>
+                    <input class="form-control" type="text" name="description" placeholder="Description">
+                    <label for="exampleInputEmail1">Choose the appropriate category for the image</label>
+                    <select class="form-control" name="category">
+                        <option value="dsc">Science Club</option>
+                        <option value="college">College</option>
+                        <option value="project">Projects</option>
+                        <option value="fair">Fair</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <label for="exampleInputEmail1">Image taken date</label>
+                    <input class="form-control" type="date" name="date" placeholder="date">
+                    <br>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="newImage">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <br><br>
+                    <input class="form-control btn btn-success" type="submit" value="Upload">
+                </div>
+            </form>
+        </div>
     </div>
+    <div id="footer"></div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
@@ -40,7 +61,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="dev/footer.js"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
