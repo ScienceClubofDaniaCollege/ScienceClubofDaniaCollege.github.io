@@ -13,7 +13,11 @@ const cacheAssests = [
     '/js/main.js',
     '/dev/footer.js',
     '/js/loader.js',
-    '/css/main.css'
+    '/css/main.css',
+    '/html/',
+    '/img/',
+    '/css/',
+    '/js/'
 ];
 
 

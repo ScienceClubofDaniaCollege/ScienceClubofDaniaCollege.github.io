@@ -63,11 +63,11 @@ var navBarI = genNav('', 'html/');
 var navContainer = document.querySelector("#navbar");
 var navContainerI = document.querySelector("#navbari");
 
-if (navContainer == null) {
-  navContainerI.innerHTML = navBarI;
-} else {
-  navContainer.innerHTML = navBar;
-}
+// if (navContainer == null) {
+//   navContainerI.innerHTML = navBarI;
+// } else {
+//   navContainer.innerHTML = navBar;
+// }
 
 const img = document.getElementsByTagName('img');
 for (let i = 0; i < img.length; i++) {
@@ -105,13 +105,31 @@ fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
 // adding head content
 const head = document.getElementsByTagName('head');
 const headContent = `
-<!-- Font Awsome -->
+<!-- Font Awsome by js-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
 `
 const addHeadContent = () => {
   head[0].innerHTML += headContent;
 }
-addHeadContent();
+// addHeadContent();
+
+
+
+
+
+
+// adding footer------
+if ($('#footer')) {
+  $(document).ready(function () {$('#footer').load('/html/partial/footer.html');});
+} else {
+  console.log('No footer container in this pag with id="footer"');
+}
+if ($('#navbar')) {
+  $(document).ready(function () {$('#navbar').load('/html/partial/nav.html');});
+} else {
+  console.log('No footer container in this pag with id="footer"');
+}
 
 // End of NHA's JavaScript
 

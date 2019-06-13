@@ -187,8 +187,6 @@ async function handleFeedbackForm() {
         sndBtn.classList.remove('btn-success')
         sndBtn.classList.add('bg-primary')
     }, 1200)
-
-
 }
 
 function validation() {
