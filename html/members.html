@@ -29,6 +29,17 @@
     <script src="../js/loader.js"></script>
     <!-- ICON -->
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <style>
+      td.details-control {
+        background: url("https://datatables.net/examples/resources/details_open.png")
+          no-repeat center center;
+        cursor: pointer;
+      }
+      tr.shown td.details-control {
+        background: url("https://datatables.net/examples/resources/details_close.png")
+          no-repeat center center;
+      }
+    </style>
     <title>Dania Science Club</title>
   </head>
 
@@ -38,7 +49,7 @@
       <img src="../img/preloader.svg" alt="Loading..." />
     </div>
     <!-- start of navbar -->
-    <div id="navbar" class="sticky-top event"></div>
+    <div id="navbar" class="sticky-top members"></div>
     <!-- end of navbar -->
     <br /><br /><br />
     <!-- start of page contents -->
@@ -54,19 +65,19 @@
       <div class="card shadow">
         <div class="card-header h5">Member List</div>
         <div class="card-body">
-          <table class="table display responsive" id="member-list">
-            <thead>
-              <tr>
-                <td>Picture</td>
-                <td>Name</td>
-                <!-- <td>Roll</td> -->
-                <td>Member ID</td>
-                <td>Phone</td>
-                <td>Socials</td>
-              </tr>
-            </thead>
-            <tbody id="member-row"></tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table" width="100%" cellspacing="0" id="member-list">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Picture</th>
+                  <th>Name</th>
+                  <th>ID</th>
+                  <!-- <th>Socials</th> -->
+                </tr>
+              </thead>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -90,37 +101,81 @@
     <!-- Main JavaScript -->
     <script src="../js/main.js"></script>
     <script src="/vendor/datatables/datatables.min.js"></script>
+    <script src="/vendor/datatables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <script>
+      // -----------
+      function format(d) {
+        // `d` is the original data object for the row
+                    // <thead>
+            //   <th>First Name</th>
+            //   <th>Last Name</th>
+            //   <th>Roll Name</th>
+            //   <th>First Name</th>
+        return (
+          `<table class="card rounded bg-light text-capitalize">
+
+          <tr>
+          <td>Full name:</td><td>${d.fname} ${d.lname}</td>
+          </tr>
+          <tr>
+          <td>Phone:</td><td>${d.phone}</td>
+          </tr>
+          <tr>
+          <td>Roll:</td><td>${d.roll}</td>
+          </tr>
+          <tr>
+          <td>batch:</td><td>${d.batch}</td>
+          </tr>
+          <tr>
+          <td>section:</td><td>${d.section}</td>
+          </tr>
+          <tr>
+          <td>bio:</td><td>${d.bio}</td>
+          </tr>
+          </table>`
+          // `<div class="card bg-info>
+          //   <p>Name: ${d.fname} ${d.fname}</p>
+          //   </div>   
+          //   `
+        );
+      }
+
+      // ----------
       $(document).ready(function() {
-        $("#member-list").DataTable({
+        let table = $("#member-list").DataTable({
           oLanguage: {
             sLengthMenu: "Display _MENU_ members",
             sLoadingRecords: "Please wait - loading members...",
-            sSearch: "Search member _INPUT_",
+            sSearch: "Search _INPUT_",
             sInfo: "Showing _TOTAL_ members"
           },
-          iDisplayLength: 50,
-          responsive: true,
+          iDisplayLength: 25,
+
+          order: [[3, "asc"]],
           columnDefs: [
-            { responsivePriority: 1, targets: 0 },
-			{ responsivePriority: 2, targets: 1 },
-			{ responsivePriority: 3, targets: 2 },
-			{ responsivePriority: 4, targets: 3 },
-			{ responsivePriority: 5, targets: 4 },
-			{ orderable: false, targets: [0, 3, 4] }
+            { orderable: false, targets: 0 },
+            { orderable: false, targets: 1 },
           ],
+
           ajax: {
             url: "https://dscapi.herokuapp.com/member",
             dataSrc: ""
           },
           columns: [
             {
+              className: "details-control",
+              orderable: false,
+              data: null,
+              defaultContent: ""
+            },
+            {
               data: null,
               render: data =>
-                '<img class="rounded" src=' +
-                data.photo[0].split(".jpg")[0] +
-                "s" +
-                ".jpg >"
+                `<img class="rounded" 
+                  src="${data.photo[0].split(".jpg")[0]}s.jpg" 
+                  style="height:60px;object-fit:cover;width:60px;"
+                  alt="${data.fname}'s photo"
+                  >`
             },
             {
               data: null,
@@ -133,18 +188,34 @@
             },
             // { data: "roll" },
             { data: "memberId" },
-            { data: "phone" },
-            {
-              data: null,
-              render: data => {
-                if (data.socials && data.socials.fb) {
-                  return `<a href='https://fb.me/${
-                    data.socials.fb
-                  }'><i class="fab fa-facebook-f"></i><a>`;
-                } else return "n/a";
-              }
-            }
+            // { data: "phone" },
+            // {
+            //   data: null,
+            //   render: data => {
+            //     if (data.socials && data.socials.fb) {
+            //       return `<a href='https://fb.me/${
+            //         data.socials.fb
+            //       }'><i class="fab fa-facebook-f"></i><a>`;
+            //     } else return "";
+            //   }
+            // }
           ]
+        });
+
+        // Add event listener for opening and closing details
+        $("#member-list tbody").on("click", "td.details-control", function() {
+          var tr = $(this).closest("tr");
+          var row = table.row(tr);
+
+          if (row.child.isShown()) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass("shown");
+          } else {
+            // Open this row
+            row.child(format(row.data())).show();
+            tr.addClass("shown");
+          }
         });
       });
     </script>

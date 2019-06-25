@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="noscroll">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+    <!-- Font aowsum -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+      integrity="sha384- Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/vendor/datatables/datatables.min.css" />
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/loader.js"></script>
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <title>Dania Science Club</title>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="loader">
+      <img src="../img/preloader.svg" alt="Loading..." />
+    </div>
+    <!-- start of navbar -->
+    <div id="navbar" class="sticky-top project"></div>
+    <!-- end of navbar -->
+    <br /><br /><br />
+    <!-- start of page contents -->
+    <!-- shortcut-->
+    <div
+      style="left: -200px; opacity: 0.4;"
+      id="hidesct"
+      onclick="hidesct()"
+    ></div>
+    <div style="left: -205px;" id="sct" onclick="hidesct()"></div>
+
+    <div class="container text-center">
+      <div class="card shadow">
+        <div class="card-header h5">Projects</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table" width="100%" cellspacing="0" id="projects">
+              <thead>
+                <tr>
+                  <td>No.</td>
+                  <td>Name</td>
+                  <!-- <td>Roll</td> -->
+                  <td>Creator</td>
+                  <!-- <td>Phone</td> -->
+                  <td>Details</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- end of page contents -->
+    <!-- end of page contents -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="/vendor/datatables/datatables.min.js"></script>
+    <script src="/vendor/datatables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#projects").DataTable({
+            ajax: {
+              url: "https://dscapi.herokuapp.com/project",
+              dataSrc: ""
+            },
+            columns: [{ data: "memberId" }],
+
+
+
+          oLanguage: {
+            sLengthMenu: "Display _MENU_ projects",
+            sLoadingRecords: "Please wait - loading projects...",
+            sSearch: "Search project _INPUT_"
+            // sInfo: "Showing _TOTAL_ members"
+          },
+          iDisplayLength: 25,
+          order: [[0, "asc"], [1, "asc"], [2, "asc"], [3, "asc"]],
+          columnDefs: [
+              { orderable: false, targets: 0 },
+              { orderable: false, targets: 2 },
+              { orderable: false, targets: 3},
+              { orderable: false, targets: 4 },
+
+            ],
+        });
+      });
+    </script>
+  </body>
+</html>
