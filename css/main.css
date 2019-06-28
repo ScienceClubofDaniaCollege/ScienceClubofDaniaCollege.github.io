@@ -118,6 +118,10 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */  
+.center{
+    margin-left: 50%;
+    transform: translateX(50%);
+}
 table{
     transition: 1s;
 }
