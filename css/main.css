@@ -118,6 +118,9 @@
 /* ----------------------------------------------------------- */
 
 /* Start of Zahin's CSS */  
+table{
+    transition: 1s;
+}
 .hide{
     display: none;
 }
