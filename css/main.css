@@ -384,3 +384,33 @@ td{
     border-radius: 0px 15px 12px 10px;
 }
 }
+#stng{
+    margin-top: 200px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translateX(-50%);
+        width: 260px;
+        height: 270px;
+        padding: 20px;
+      }
+      .dm{
+        display: inline-flex;
+      }
+      #dbtn{
+        height: 28px; 
+        font-size: 10px;
+        width: 80px;
+        margin-left: 14px;
+        font-weight: bold;
+        color: white;
+      }
+      input{
+        margin-left: 10px;
+        width: 100px;
+        height: 30px;
+      }
+      input[type="submit"]{
+        margin-left: 50px;
+        color: white;
+        font-size: 12px;
+      }

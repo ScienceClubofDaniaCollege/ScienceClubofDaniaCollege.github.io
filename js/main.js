@@ -146,4 +146,39 @@ function scrollFunction() {
     x.classList.add('before');
   }
 }
+function btn() {
+  var x = document.getElementById("dbtn");
+  if (x.style.backgroundColor == "red") {
+    x.innerHTML = "OFF";
+    x.style.backgroundColor = "blue"
+  } else {
+    x.innerHTML = "ON";
+    x.style.backgroundColor = "red"
+  }
+}
+function stngs() {
+  var a = document.getElementById("dm");
+  var b = document.getElementById("fs");
+  var c = document.getElementById("bg");
+  
+  var bdy = document.getElementsByTagName("body");
+
+  var d = a.innerText;
+  var e = b.value+"px";
+  var f = c.value;
+  if (a !== null) {
+    bdy.style.backgroundColor = f;
+    bdy.style.fontSize = e;
+  }
+  
+}
+function stngsopen(){
+  var x = document.getElementById("stng");
+  
+  if (x.style.display == "none") {
+    x.style.display = "block"
+  } else {
+    x.style.display = "none"
+  }
+}
 // end of zahins javascript

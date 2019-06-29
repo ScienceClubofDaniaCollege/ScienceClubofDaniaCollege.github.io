@@ -27,6 +27,28 @@
 </head>
 
 <body>
+
+
+<div class="card" id="stng" style="display: none;">
+<div class="dm" id="dm">
+  <p><b>DARK MODE</b></p>
+  <div class="btn" id="dbtn" style="background-color: red" onclick="btn()">ON</div>
+</div><br>
+<div class="dm" >
+  <p><b>FONT SIZE</b></p>
+  <input id="fs" type="number" value="20">
+</div><br>
+<div class="dm">
+  <p><b>BG COLOR</b></p>
+  <input id="bg" type="color" value="#ffffff">
+</div><hr>
+<input class="btn bg-primary" type="submit" value="SAVE" onclick="stngs()">
+</div>
+
+
+
+
+
     <!-- Preloader -->
     <div class="loader">
         <img src="img/preloader.svg" alt="Loading...">
@@ -67,6 +89,7 @@
     <div style="left: -205px;" id="sct" onclick="hidesct()">
         <p><a href="#headerbox">Header</a></p>
         <p><a href="#about">About</a></p>
+        <p><a href="#about" onclick="stngsopen()">Settings</a></p>
     </div>
     <div class="container-fluid text-center">
         <h1 class="wlcmText h1">Welcome to Dania Science Club's Website.</h1>
