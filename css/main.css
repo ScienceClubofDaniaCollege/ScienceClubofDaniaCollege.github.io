@@ -385,6 +385,7 @@ td{
 }
 }
 #stng{
+    z-index:1000;
     margin-top: 200px;
     position: fixed;
     margin-left: 50%;
