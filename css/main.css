@@ -5,7 +5,7 @@
     pointer-events:none;
 }
     /* active menu in navbar */
-.home #home, .gallery #gallery, .event #events, .about #about, .member-list #member-list,.members #members, .member-area #member-area, .about #about,.register #register,.subject #subject{
+.home #home, .gallery #gallery, .event #events, .about #about, .member-list #member-list,.members #members, .member-area #member-area, .about #about,.register #register,.subject #subject, .cosmology #cosmology{
     color: aliceblue;
     border-radius: 0px 15px 12px 10px;
     background-color: #343a40;
