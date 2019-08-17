@@ -165,9 +165,9 @@ async function handleFeedbackForm() {
     let name = formData.get('name');
     let email = formData.get('email');
     let message = formData.get('message');
-    console.log(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`);
+    console.log(`https://dsc.nhas.me/feedback?name=${name}&email=${email}&message=${message}`);
 
-    await fetch(`https://dscapi.herokuapp.com/feedback?name=${name}&email=${email}&message=${message}`, { mode: 'no-cors' })
+    await fetch(`https://dsc.nhas.me/feedback?name=${name}&email=${email}&message=${message}`, { mode: 'no-cors' })
         .then(function (response) {
             return response;
         })

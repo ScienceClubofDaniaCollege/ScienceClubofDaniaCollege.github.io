@@ -3,9 +3,9 @@ let galleryContainer = document.querySelector("#gallery-container");
 const createGallery = async (cat) => {
   let url;
   if (cat) {
-    url = "https://dscapi.herokuapp.com/gallery?cat=" + cat;
+    url = "https://dsc.nhas.me/gallery?cat=" + cat;
   } else {
-    url = "https://dscapi.herokuapp.com/gallery?cat";
+    url = "https://dsc.nhas.me/gallery?cat";
   }
 
   galleryContainer.innerHTML = `<div id="loader" class="center"></div>`
