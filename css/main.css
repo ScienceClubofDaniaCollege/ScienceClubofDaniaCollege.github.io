@@ -405,6 +405,27 @@ td{
         font-weight: bold;
         color: white;
       }
+    #marquee{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 8px;
+        background-color: gray;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    .numanimdiv{
+        display: flex;
+        flex-direction: column;
+    }
+    #numberanim{
+    font-family: fantasy;
+    font-size: 50px;
+    color: #1e7aff;
+    background-color: #a9e4da;
+    padding: 10px;
+    border-radius: 10px;
+    width: 75px;
+    }
 /*       input{
         margin-left: 10px;
         width: 100px;

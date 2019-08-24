@@ -181,4 +181,15 @@ function stngsopen(){
     x.style.display = "none"
   }
 }
+var num = document.getElementById("numberanim");   
+  var first = 0;
+  var id = setInterval(frame, 20);
+  function frame() {
+    if (first == 100) {
+      clearInterval(id);
+    } else {
+      first++; 
+      num.innerText = first;  
+    }
+  }
 // end of zahins javascript
