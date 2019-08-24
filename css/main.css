@@ -406,16 +406,14 @@ td{
         color: white;
       }
     #marquee{
+        color:white;
         font-weight: bold;
-        font-size: 20px;
         padding: 8px;
-        background-color: gray;
-        margin-top: 20px;
+        background-color: #50b4f2;
         margin-bottom: 20px
     }
     .numanimdiv{
-        display: flex;
-        flex-direction: column;
+            text-align: center;
     }
     #numberanim{
     font-family: fantasy;
@@ -424,7 +422,10 @@ td{
     background-color: #a9e4da;
     padding: 10px;
     border-radius: 10px;
-    width: 75px;
+    width: 90px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50px);
     }
 /*       input{
         margin-left: 10px;
