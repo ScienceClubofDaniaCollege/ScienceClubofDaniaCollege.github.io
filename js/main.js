@@ -187,6 +187,7 @@ var num = document.getElementById("numberanim");
   function frame() {
     if (first == 100) {
       clearInterval(id);
+      num.classList.add('finishanim');
     } else {
       first++; 
       num.innerText = first;  
