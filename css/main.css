@@ -428,6 +428,21 @@ td{
     margin-left: 50%;
     transform: translateX(-50px);
     }
+.finishanim{
+    animation:done 1s;
+  }
+    @keyframes done {
+    0% {
+         font-size: 50px;
+    }
+    50% {
+        font-size: 90px;
+        width: 150px;
+    }
+    100% {
+        font-size: 50px;
+    }
+}
 /*       input{
         margin-left: 10px;
         width: 100px;
