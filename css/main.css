@@ -431,7 +431,7 @@ td{
 .finishanim{
     animation:done 1s;
   }
-    @keyframes done {
+/*     @keyframes done {
     0% {
          font-size: 50px;
     }
@@ -442,7 +442,7 @@ td{
     100% {
         font-size: 50px;
     }
-}
+} */
 /*       input{
         margin-left: 10px;
         width: 100px;
