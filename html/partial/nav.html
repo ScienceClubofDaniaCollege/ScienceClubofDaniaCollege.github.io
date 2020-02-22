@@ -50,7 +50,7 @@
 
 var mem;
 let lc = document.getElementById('loginbtn');
-fetch('https://dsc.nhas.me/who/v2', { credentials: 'include'})
+fetch('https://dscapi.herokuapp.com/who/v2', { credentials: 'include'})
     .then(function (response) {
         return response.json();
     })
