@@ -5,7 +5,7 @@
     pointer-events:none;
 }
     /* active menu in navbar */
-.home #home, .gallery #gallery, .event #events, .about #about, .member-list #member-list,.members #members, .member-area #member-area, .about #about,.register #register,.subject #subject, .cosmology #cosmology{
+.home #home, .gallery #gallery, .event #events, .about #about, .member-list #member-list,.members #members, .member-area #member-area, .about #about,.register #register,.project #project,.subject #subject, .cosmology #cosmology{
     color: aliceblue;
     border-radius: 0px 15px 12px 10px;
     background-color: #343a40;
@@ -172,10 +172,7 @@ table{
     box-shadow: 0 0 10px 0px black;
 }
 /* add class name of pages with iframe */
-.member-area .before,.gallery .before,.member-list .before,.register .before{
-    background-color: white;
-    box-shadow: 0 0 3px 0px black;
-}
+
 .after{
     background-color: white;
 }
@@ -322,6 +319,7 @@ nav a:hover{
 td{
     padding: 20px;
 }
+
 #hidesct{
     transition: .5s;
     border: 9px solid #007bff ;
@@ -333,6 +331,7 @@ td{
     width: 230px;
     height: 70px;
 }
+
 #sct{
     transition: .5s;
     border: 2px solid white;
@@ -390,33 +389,33 @@ td{
     position: fixed;
     margin-left: 50%;
     transform: translateX(-50%);
-        width: 260px;
-        height: 270px;
-        padding: 20px;
-      }
-      .dm{
-        display: inline-flex;
-      }
-      #dbtn{
-        height: 28px; 
-        font-size: 10px;
-        width: 80px;
-        margin-left: 14px;
-        font-weight: bold;
-        color: white;
-      }
-    #marquee{
-        color:white;
-        font-weight: bold;
-        padding: 8px;
-        background-color: #50b4f2;
-        margin-bottom: 20px;
-        margin-top: -40px;
-    }
-    .numanimdiv{
-            text-align: center;
-    }
-    #numberanim{
+    width: 260px;
+    height: 270px;
+    padding: 20px;
+  }
+  .dm{
+    display: inline-flex;
+  }
+  #dbtn{
+    height: 28px; 
+    font-size: 10px;
+    width: 80px;
+    margin-left: 14px;
+    font-weight: bold;
+    color: white;
+  }
+#marquee{
+    color:white;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #50b4f2;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+.numanimdiv{
+        text-align: center;
+}
+#numberanim{
     font-family: fantasy;
     font-size: 50px;
     color: #299bf8;
@@ -427,30 +426,7 @@ td{
     text-align: center;
     margin-left: 50%;
     transform: translateX(-50px);
-    }
+}
 .finishanim{
     animation:done 1s;
   }
-/*     @keyframes done {
-    0% {
-         font-size: 50px;
-    }
-    50% {
-        font-size: 90px;
-        width: 150px;
-    }
-    100% {
-        font-size: 50px;
-    }
-} */
-/*       input{
-        margin-left: 10px;
-        width: 100px;
-        height: 30px;
-      } */
-/*       input[type="submit"]{
-        margin-left: 50px;
-        color: white;
-        font-size: 12px;
-      }
- */

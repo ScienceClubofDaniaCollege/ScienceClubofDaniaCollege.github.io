@@ -24,42 +24,9 @@
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title id="title">Dania Science Club</title>
     <link rel="manifest" href="/manifest.json">
-    <style>
-    input{
-        margin-left: 10px;
-        width: 100px;
-        height: 30px;
-      }
-      input[type="submit"]{
-        margin-left: 50px;
-        color: white;
-        font-size: 12px;
-      }
-    </style>
 </head>
 
 <body>
-
-
-<div class="card" id="stng" style="display: none;">
-<div class="dm" id="dm">
-  <p><b>DARK MODE</b></p>
-  <div class="btn" id="dbtn" style="background-color: red" onclick="btn()">ON</div>
-</div><br>
-<div class="dm" >
-  <p><b>FONT SIZE</b></p>
-  <input id="fs" type="number" value="20">
-</div><br>
-<div class="dm">
-  <p><b>BG COLOR</b></p>
-  <input id="bg" type="color" value="#ffffff">
-</div><hr>
-<input class="btn bg-primary" type="submit" value="SAVE" onclick="stngs()">
-</div>
-
-
-
-
 
     <!-- Preloader -->
     <div class="loader">
@@ -101,13 +68,7 @@ If you are a student of Dania College then you can help us to design this websit
 We will be adding various educational content to this website.
 We may present this website in some science fair.</marquee>
     <!-- page contents -->
-    <!--shortcut-->
-    <div style="left: -200px; opacity: 0.4;" id="hidesct" onclick="hidesct()"></div>
-    <div style="left: -205px;" id="sct" onclick="hidesct()">
-        <p><a href="#headerbox">Header</a></p>
-        <p><a href="#about">About</a></p>
-        <p><a href="#about" onclick="stngsopen()">Settings</a></p>
-    </div>
+
 
      <div class="numanimdiv"><h3>Total Members</h3>
      <div id ="numberanim"></div>
