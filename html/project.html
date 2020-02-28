@@ -74,7 +74,7 @@
         <div class="card-header h5">Projects</div>
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table" width="100%" cellspacing="0" id="projects">
+            <table class="table" width="100%" cellspacing="0" id="project">
               <thead>
                 <tr>
                   <td>No.</td>
@@ -85,6 +85,22 @@
                   <td>Details</td>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    Science Club Managemant System
+                  </td>
+                  <td>
+                    Nurul Huda & Zahin Afsar
+                  </td>
+                  <td>
+                    This is a website for managing club including club members, projects, gallery etc dynamically
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -114,32 +130,45 @@
     <script src="/vendor/datatables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#projects").DataTable({
-            ajax: {
-              url: "https://dscapi.herokuapp.com/project",
-              dataSrc: ""
-            },
-            columns: [{ data: "memberId" }],
+        $("#project").DataTable(
+          // {
+        //     // ajax: {
+        //     //   url: "https://dscapi.herokuapp.com/project",
+        //     //   dataSrc: ""
+        //     // },
+        //     data: [
+        //       {
+        //         id: 'project',
+        //         name: 'Science Club Managemant System',
+        //         creator: 'Nurul Huda & Zahin Afsar',
+        //         details: 'This is a website for managing club including club members, projects, gallery etc dynamically.'
+        //       }
+        //     ],
+        //     columns: [
+        //       { data: {id} },
+        //       { data: "name" },
+        //       { data: "creator" },
+        //       { data: "details" },
+          
+        //   ],
+        //   oLanguage: {
+        //     sLengthMenu: "Display _MENU_ projects",
+        //     sLoadingRecords: "Please wait - loading projects...",
+        //     sSearch: "Search project _INPUT_"
+        //     // sInfo: "Showing _TOTAL_ members"
+        //   },
+        //   iDisplayLength: 10,
+        //   order: [[0, "asc"], [1, "asc"], [2, "asc"], [3, "asc"]],
+        //   columnDefs: [
+        //       { orderable: false, targets: 0 },
+        //       { orderable: false, targets: 2 },
+        //       { orderable: false, targets: 3},
+        //       { orderable: false, targets: 4 },
 
-
-
-          oLanguage: {
-            sLengthMenu: "Display _MENU_ projects",
-            sLoadingRecords: "Please wait - loading projects...",
-            sSearch: "Search project _INPUT_"
-            // sInfo: "Showing _TOTAL_ members"
-          },
-          iDisplayLength: 25,
-          order: [[0, "asc"], [1, "asc"], [2, "asc"], [3, "asc"]],
-          columnDefs: [
-              { orderable: false, targets: 0 },
-              { orderable: false, targets: 2 },
-              { orderable: false, targets: 3},
-              { orderable: false, targets: 4 },
-
-            ],
-        });
-      });
+        //     ],
+        // });
+      // }
+      );
     </script>
   </body>
 </html>
